@@ -1,0 +1,17 @@
+if (APPLE)
+  add_subdirectory(MacOSX)
+endif()
+add_subdirectory(icons)
+
+if( UNIX AND NOT APPLE )
+  add_subdirectory(nautilus)
+
+  find_package(ECM 1.2.0 NO_MODULE QUIET)
+  set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR} "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+  find_package(KF5 "5.16" COMPONENTS KIO)
+  if(KF5_FOUND)
+    add_subdirectory(dolphin)
+  else()
+    message("Dolphin plugin disabled: KDE Frameworks 5.16 not found")
+  endif()
+endif()

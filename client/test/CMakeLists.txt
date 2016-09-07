@@ -1,0 +1,58 @@
+include_directories(${CMAKE_BINARY_DIR}/csync ${CMAKE_BINARY_DIR}/csync/src ${CMAKE_BINARY_DIR}/src)
+include_directories(${CMAKE_SOURCE_DIR}/csync/src/)
+include_directories(${CMAKE_SOURCE_DIR}/csync/src/std ${CMAKE_SOURCE_DIR}/src)
+include_directories(${CMAKE_SOURCE_DIR}/src/3rdparty/qtokenizer)
+
+include(QtVersionAbstraction)
+setup_qt()
+
+include(owncloud_add_test.cmake)
+
+owncloud_add_test(OwncloudPropagator "")
+owncloud_add_test(Utility "")
+owncloud_add_test(Updater "")
+
+SET(FolderWatcher_SRC ../src/gui/folderwatcher.cpp)
+
+IF( NOT WIN32 AND NOT APPLE )
+list(APPEND FolderWatcher_SRC  ../src/gui/folderwatcher_linux.cpp)
+ENDIF()
+IF( WIN32 )
+list(APPEND  FolderWatcher_SRC ../src/gui/folderwatcher_win.cpp)
+ENDIF()
+IF( APPLE )
+list(APPEND FolderWatcher_SRC ../src/gui/folderwatcher_mac.cpp)
+list(APPEND FolderWatcher_SRC ../src/gui/socketapisocket_mac.mm)
+ENDIF()
+
+owncloud_add_test(FolderWatcher "${FolderWatcher_SRC}")
+if( UNIX AND NOT APPLE )
+    owncloud_add_test(InotifyWatcher "${FolderWatcher_SRC}")
+endif(UNIX AND NOT APPLE)
+
+owncloud_add_test(CSyncSqlite "")
+owncloud_add_test(NetrcParser ../src/cmd/netrcparser.cpp)
+owncloud_add_test(OwnSql "")
+owncloud_add_test(SyncJournalDB "")
+owncloud_add_test(SyncFileItem "")
+owncloud_add_test(ConcatUrl "")
+
+owncloud_add_test(XmlParse "")
+owncloud_add_test(FileSystem "")
+owncloud_add_test(ChecksumValidator "")
+
+owncloud_add_test(ExcludedFiles "")
+
+SET(FolderMan_SRC ../src/gui/folderman.cpp)
+list(APPEND FolderMan_SRC ../src/gui/folder.cpp )
+list(APPEND FolderMan_SRC ../src/gui/socketapi.cpp )
+list(APPEND FolderMan_SRC ../src/gui/accountstate.cpp )
+list(APPEND FolderMan_SRC ../src/gui/syncrunfilelog.cpp )
+list(APPEND FolderMan_SRC ../src/gui/lockwatcher.cpp )
+list(APPEND FolderMan_SRC ${FolderWatcher_SRC})
+list(APPEND FolderMan_SRC stub.cpp )
+#include_directories(${QTKEYCHAIN_INCLUDE_DIR})
+#include_directories(${CMAKE_BINARY_DIR}/src/gui)
+#include_directories(${CMAKE_SOURCE_DIR}/src/3rdparty/qjson)
+owncloud_add_test(FolderMan "${FolderMan_SRC}")
+
