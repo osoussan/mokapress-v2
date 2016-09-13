@@ -66,7 +66,7 @@ OwncloudSetupPage::OwncloudSetupPage(QWidget *parent)
 
     setupCustomization();
 
-    slotUrlChanged(QLatin1String("")); // don't jitter UI
+    // slotUrlChanged(QLatin1String("")); // don't jitter UI
     connect(_ui.leUrl, SIGNAL(textChanged(QString)), SLOT(slotUrlChanged(QString)));
     connect(_ui.leUrl, SIGNAL(editingFinished()), SLOT(slotUrlEditFinished()));
 
@@ -169,6 +169,7 @@ void OwncloudSetupPage::initializePage()
     if (Theme::instance()->overrideServerUrl().isEmpty()) {
         _ui.leUrl->setFocus();
     } else {
+	_ui.leUrl->setText(Theme::instance()->overrideServerUrl());
         setCommitPage(true);
         // Hack: setCommitPage() changes caption, but after an error this page could still be visible
         setButtonText(QWizard::CommitButton, tr("&Next >"));
@@ -233,6 +234,12 @@ bool OwncloudSetupPage::validatePage()
         emit completeChanged();
         return true;
     }
+}
+
+void OwncloudSetupPage::connectToUrl()
+{
+    emit determineAuthType(Theme::instance()->overrideServerUrl().simplified());
+    emit completeChanged();
 }
 
 void OwncloudSetupPage::setAuthType (WizardCommon::AuthType type)

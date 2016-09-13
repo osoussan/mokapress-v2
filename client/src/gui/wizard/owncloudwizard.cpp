@@ -46,7 +46,7 @@ OwncloudWizard::OwncloudWizard(QWidget *parent)
       _setupLog()
 {
     setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
-    setPage(WizardCommon::Page_ServerSetup, _setupPage);
+    // setPage(WizardCommon::Page_ServerSetup, _setupPage);
     setPage(WizardCommon::Page_HttpCreds, _httpCredsPage);
     setPage(WizardCommon::Page_ShibbolethCreds, _shibbolethCredsPage);
     setPage(WizardCommon::Page_AdvancedSetup, _advancedSetupPage);
@@ -64,7 +64,7 @@ OwncloudWizard::OwncloudWizard(QWidget *parent)
     connect( _shibbolethCredsPage, SIGNAL(connectToOCUrl(QString)), SIGNAL(connectToOCUrl(QString)));
     connect( _advancedSetupPage, SIGNAL(createLocalAndRemoteFolders(QString, QString)),
              SIGNAL(createLocalAndRemoteFolders(QString, QString)));
-    connect(this, SIGNAL(customButtonClicked(int)), this, SIGNAL(skipFolderConfiguration()));
+    // connect(this, SIGNAL(customButtonClicked(int)), this, SIGNAL(skipFolderConfiguration()));
 
 
     Theme *theme = Theme::instance();
@@ -77,8 +77,14 @@ OwncloudWizard::OwncloudWizard(QWidget *parent)
     setOption( QWizard::NoCancelButton );
     setTitleFormat(Qt::RichText);
     setSubTitleFormat(Qt::RichText);
-    setButtonText(QWizard::CustomButton1, tr("Skip folders configuration"));
+    // setButtonText(QWizard::CustomButton1, tr("Skip folders configuration"));
 
+}
+
+// Mokapress
+void  OwncloudWizard::connectToUrl()
+{
+    _setupPage->connectToUrl();
 }
 
 void OwncloudWizard::setAccount(AccountPtr account)
@@ -148,6 +154,7 @@ void OwncloudWizard::successfulStep()
 void OwncloudWizard::setAuthType(WizardCommon::AuthType type)
 {
   _setupPage->setAuthType(type);
+  _httpCredsPage->setAuthType(type);
   if (type == WizardCommon::Shibboleth) {
     _credentialsPage = _shibbolethCredsPage;
   } else {
@@ -171,7 +178,7 @@ void OwncloudWizard::slotCurrentPageChanged( int id )
         appendToConfigurationLog( QString::null );
     }
 
-    setOption(QWizard::HaveCustomButton1, id == WizardCommon::Page_AdvancedSetup);
+    // setOption(QWizard::HaveCustomButton1, id == WizardCommon::Page_AdvancedSetup);
 
     if (id == WizardCommon::Page_AdvancedSetup) {
         // Going back from this page messes the state as the account is created already

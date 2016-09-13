@@ -213,7 +213,7 @@ QString Theme::defaultServerFolder() const
 
 QString Theme::overrideServerUrl() const
 {
-    return QString::null;
+    return QString("https://mokapress.com");;
 }
 
 QString Theme::forceConfigAuthType() const
