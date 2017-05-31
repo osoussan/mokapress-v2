@@ -97,7 +97,8 @@ QString ownCloudTheme::helpUrl() const
 #ifndef TOKEN_AUTH_ONLY
 QColor ownCloudTheme::wizardHeaderBackgroundColor() const
 {
-    return QColor("#1d2d42");
+    return QColor("#ffa400");
+    //return QColor("#1d2d42");
 }
 
 QColor ownCloudTheme::wizardHeaderTitleColor() const
@@ -114,12 +115,12 @@ QPixmap ownCloudTheme::wizardHeaderLogo() const
 
 QString ownCloudTheme::appName() const
 {
-    return QLatin1String("ownCloud");
+    return QLatin1String("Mokapress");
 }
 
 QString ownCloudTheme::appNameGUI() const
 {
-    return QLatin1String("ownCloud");
+    return QLatin1String("Mokapress");
 }
 
 

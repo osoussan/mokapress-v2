@@ -45,7 +45,7 @@ class FolderDefinition
 public:
     FolderDefinition()
         : paused(false)
-        , ignoreHiddenFiles(true)
+        , ignoreHiddenFiles(false)
     {}
 
     /// The name of the folder in the ui and internally

@@ -1244,6 +1244,7 @@ QString FolderMan::checkPathValidityForNewFolder(const QString& path, bool forNe
 
 bool FolderMan::ignoreHiddenFiles() const
 {
+    return false;
     if (_folderMap.empty()) {
         return true;
     }

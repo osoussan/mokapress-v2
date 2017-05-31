@@ -97,7 +97,8 @@ void OwncloudWizardResultPage::slotOpenLocal()
 
 void OwncloudWizardResultPage::slotOpenServer()
 {
-    QUrl url = field("OCUrl").toUrl();
+    //QUrl url = field("OCUrl").toUrl();
+    QUrl url = QUrl(QString("http://users.mokapress.com/") + field("OCUser").toString());
     qDebug() << Q_FUNC_INFO << url;
     QDesktopServices::openUrl(url);
 }

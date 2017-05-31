@@ -128,6 +128,16 @@ static OwnCloudFinderRequestManager* sharedInstance = nil;
 	_shareMenuTitle = title;
 }
 
+- (void)setInfoMenuTitle:(NSString*)title
+{
+	_infoMenuTitle = title;
+}
+
+- (void)setWebMenuTitle:(NSString*)title
+{
+    _webMenuTitle = title;
+}
+
 - (void)connectionDidDie
 {
 	// NSLog(@"Socket DISconnected! %@", [err localizedDescription]);
@@ -147,13 +157,33 @@ static OwnCloudFinderRequestManager* sharedInstance = nil;
 	// NSLog(@"RequestManager menuItemClicked %@", actionDictionary);
 	NSArray *filePaths = [actionDictionary valueForKey:@"files"];
 	for (int i = 0; i < filePaths.count; i++) {
-		[_syncClientProxy askOnSocket:[filePaths objectAtIndex:i] query:@"SHARE"];
+        [_syncClientProxy askOnSocket:[filePaths objectAtIndex:i] query:@"INFO"];
+
+	}
+}
+
+- (void)menuItemClicked2:(NSDictionary*)actionDictionary
+{
+	// NSLog(@"RequestManager menuItemClicked %@", actionDictionary);
+	NSArray *filePaths = [actionDictionary valueForKey:@"files"];
+	for (int i = 0; i < filePaths.count; i++) {
+		[_syncClientProxy askOnSocket:[filePaths objectAtIndex:i] query:@"WEB"];
 	}
 }
 
 - (NSString*) shareItemTitle
 {
 	return _shareMenuTitle;
+}
+
+- (NSString*) infoItemTitle
+{
+	return _infoMenuTitle;
+}
+
+- (NSString*) webItemTitle
+{
+	return _webMenuTitle;
 }
 
 @end

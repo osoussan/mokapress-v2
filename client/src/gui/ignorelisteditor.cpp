@@ -25,6 +25,8 @@
 #include <QMessageBox>
 #include <QInputDialog>
 
+#include <iostream>
+
 namespace OCC {
 
 static int patternCol = 0;
@@ -58,6 +60,8 @@ IgnoreListEditor::IgnoreListEditor(QWidget *parent) :
 
     ui->tableWidget->horizontalHeader()->setResizeMode(patternCol, QHeaderView::Stretch);
     ui->tableWidget->verticalHeader()->setVisible(false);
+
+    std::cout << "SyncHiddenFiles checkbox : " << std::boolalpha << !FolderMan::instance()->ignoreHiddenFiles() << std::endl;
 
     ui->syncHiddenFilesCheckBox->setChecked( !FolderMan::instance()->ignoreHiddenFiles() );
 }

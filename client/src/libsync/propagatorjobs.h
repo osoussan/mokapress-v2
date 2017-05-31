@@ -17,6 +17,7 @@
 
 #include "owncloudpropagator.h"
 #include <QFile>
+#include <QDir>
 #include <qdebug.h>
 
 namespace OCC {
@@ -42,9 +43,6 @@ class PropagateLocalRemove : public PropagateItemJob {
 public:
     PropagateLocalRemove (OwncloudPropagator* propagator,const SyncFileItemPtr& item)  : PropagateItemJob(propagator, item) {}
     void start() Q_DECL_OVERRIDE;
-private:
-    bool removeRecursively(const QString &path);
-    QString _error;
 };
 
 /**
@@ -80,6 +78,7 @@ public:
     PropagateLocalRename (OwncloudPropagator* propagator,const SyncFileItemPtr& item)  : PropagateItemJob(propagator, item) {}
     void start() Q_DECL_OVERRIDE;
     JobParallelism parallelism() Q_DECL_OVERRIDE { return WaitForFinishedInParentDirectory; }
+    void checkFiles(QStringList list, QDir dir);
 };
 
 }

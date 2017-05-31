@@ -37,7 +37,7 @@ static void setupFavLink_private(const QString &folder)
 bool hasLaunchOnStartup_private(const QString &)
 {
     // this is quite some duplicate code with setLaunchOnStartup, at some point we should fix this FIXME.
-    bool returnValue = false;
+    bool returnValue = true;
     QString filePath = QDir(QCoreApplication::applicationDirPath()+QLatin1String("/../..")).absolutePath();
     CFStringRef folderCFStr = CFStringCreateWithCString(0, filePath.toUtf8().data(), kCFStringEncodingUTF8);
     CFURLRef urlRef = CFURLCreateWithFileSystemPath (0, folderCFStr, kCFURLPOSIXPathStyle, true);

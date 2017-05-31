@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/builder/mokapress-v2/client/src/3rdparty/libcrashreporter-qt/3rdparty/breakpad/common/convert_UTF.c
+convert_UTF.h
+/Users/builder/mokapress-v2/client/src/3rdparty/libcrashreporter-qt/3rdparty/breakpad/common/convert_UTF.h
+stdio.h
+-
+
+/Users/builder/mokapress-v2/client/src/3rdparty/libcrashreporter-qt/3rdparty/breakpad/common/convert_UTF.h
+

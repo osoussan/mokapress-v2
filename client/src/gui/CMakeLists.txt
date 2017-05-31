@@ -38,6 +38,9 @@ set(client_UI
     wizard/owncloudhttpcredspage.ui
     wizard/owncloudsetupnocredspage.ui
     wizard/owncloudwizardresultpage.ui
+    infodirdialog.ui
+    infofiledialog.ui
+    createweb.ui
 )
 
 qt_wrap_ui(client_UI_SRCS ${client_UI})
@@ -108,6 +111,9 @@ set(client_SRCS
     wizard/owncloudwizard.cpp
     wizard/owncloudwizardresultpage.cpp
     ../3rdparty/qjson/json.cpp
+    infodirdialog.cpp
+    infofiledialog.cpp
+    createweb.cpp
 )
 
 
@@ -285,6 +291,7 @@ set_target_properties( ${APPLICATION_EXECUTABLE} PROPERTIES
 set_target_properties( ${APPLICATION_EXECUTABLE} PROPERTIES
 	INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/${LIB_INSTALL_DIR}/${APPLICATION_EXECUTABLE}" )
 
+##target_link_libraries( ${APPLICATION_EXECUTABLE} ${OPENSSL_LIBRARIES})
 target_link_libraries( ${APPLICATION_EXECUTABLE} ${QT_LIBRARIES} )
 target_link_libraries( ${APPLICATION_EXECUTABLE} ${synclib_NAME} )
 target_link_libraries( ${APPLICATION_EXECUTABLE} updater )

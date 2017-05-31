@@ -184,8 +184,16 @@ Application::Application(int &argc, char **argv) :
         slotAccountStateAdded(ai.data());
     }
 
-    connect(FolderMan::instance()->socketApi(), SIGNAL(shareCommandReceived(QString, QString, bool)),
-            _gui, SLOT(slotShowShareDialog(QString, QString, bool)));
+
+    //connect(FolderMan::instance()->socketApi(), SIGNAL(shareCommandReceived(QString, QString, bool)),
+            //_gui, SLOT(slotShowShareDialog(QString, QString, bool)));
+
+    connect(FolderMan::instance()->socketApi(), SIGNAL(infoCommandReceived(QString, QString)),
+            _gui, SLOT(slotShowInfoDialog(QString, QString)));
+
+    connect(FolderMan::instance()->socketApi(), SIGNAL(webCommandReceived(QString, QString)),
+            _gui, SLOT(slotCreateWebPage(QString, QString)));
+
 
     // startup procedure.
     connect(&_checkConnectionTimer, SIGNAL(timeout()), this, SLOT(slotCheckConnection()));
@@ -485,7 +493,7 @@ void Application::showHelp()
     stream << QLatin1String("File synchronisation desktop utility.") << endl << endl
            << QLatin1String(optionsC);
 
-    if (_theme->appName() == QLatin1String("ownCloud"))
+    if (_theme->appName() == QLatin1String("Mokapress"))
         stream << endl << "For more information, see http://www.owncloud.org" << endl << endl;
 
     displayHelpText(helpText);

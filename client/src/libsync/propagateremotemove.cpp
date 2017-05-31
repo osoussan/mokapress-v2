@@ -19,6 +19,7 @@
 #include "filesystem.h"
 #include <QFile>
 #include <QStringList>
+#include <QDir>
 
 namespace OCC {
 
@@ -96,6 +97,42 @@ void PropagateRemoteMove::start()
                         _propagator->_remoteFolder + _item->_file,
                         _propagator->_remoteDir + _item->_renameTarget,
                         this);
+    ///
+    QFileInfo file(targetFile);
+    QDir dir;
+    QString oldPath;
+    QString newPath;
+    if(file.isDir()) {
+        QDir dir(targetFile);
+        QStringList list = dir.entryList();
+        checkFiles(list, dir);
+    }
+    if (targetFile.endsWith(".html")) {
+        QFile web(targetFile);
+        web.open(QIODevice::ReadWrite);
+        QString cont( web.readAll() );
+        QStringList conts = cont.split( "\n" );
+        QString before(_item->_file.mid(_item->_file.lastIndexOf('/') + 1));
+            QString after(_item->_renameTarget.mid(_item->_renameTarget.lastIndexOf('/') + 1));
+        conts[0].replace(before, after);
+        web.close();
+        web.open( QIODevice::WriteOnly );
+        QTextStream text( &web );
+        foreach( QString str, conts ) {
+           text << str << endl;
+        }
+        web.close();
+    }
+        if (file.isFile()) {
+            oldPath = _propagator->_localDir + QString(".config/") + _item->_file + QString(".xml");
+            newPath = _propagator->_localDir + QString(".config/") + _item->_renameTarget + QString(".xml");
+        } else {
+            oldPath = _propagator->_localDir + QString(".config/") + _item->_file + QString("/");
+            newPath = _propagator->_localDir + QString(".config/") + _item->_renameTarget+ QString("/");
+        }
+        dir.rename(oldPath, newPath);
+
+    ///
     connect(_job, SIGNAL(finishedSignal()), this, SLOT(slotMoveJobFinished()));
     _propagator->_activeJobList.append(this);
     _job->start();
@@ -179,6 +216,36 @@ void PropagateRemoteMove::finalize()
     done(SyncFileItem::Success);
 }
 
+
+void PropagateRemoteMove::checkFiles(QStringList list, QDir dir)
+{
+    foreach (QString file, list) {
+        QFileInfo fileInfo(tr("%1/%2").arg(dir.absolutePath(), file));
+
+        if((file != "." && file != "..") && fileInfo.isDir()) {
+            QDir dir2(fileInfo.absoluteFilePath());
+            QStringList list2 = dir2.entryList();
+            checkFiles(list2, dir2);
+        }
+
+        if (file.endsWith(".html")) {
+            QFile web(fileInfo.absoluteFilePath());
+            web.open(QIODevice::ReadWrite);
+            QString cont( web.readAll() );
+            QStringList conts = cont.split( "\n" );
+            QString before(_item->_file.mid(_item->_file.lastIndexOf('/') + 1));
+            QString after(_item->_renameTarget.mid(_item->_renameTarget.lastIndexOf('/') + 1));
+            conts[0].replace(before, after);
+            web.close();
+            web.open( QIODevice::WriteOnly );
+            QTextStream text( &web );
+            foreach( QString str, conts ) {
+                   text << str << endl;
+            }
+               web.close();
+        }
+    }
+}
 
 }
 

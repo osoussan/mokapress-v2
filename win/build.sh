@@ -9,7 +9,7 @@ su - user << EOF
   ../client/admin/win/download_runtimes.sh
   cmake -DCMAKE_TOOLCHAIN_FILE=../client/admin/win/Toolchain-mingw32-openSUSE.cmake\
   -DWITH_CRASHREPORTER=ON \
-  -DOEM_THEME_DIR=/home/user/nextcloudtheme \
+  -DOEM_THEME_DIR=/home/user/mokapresstheme \
   ../client
   make -j4
   make package

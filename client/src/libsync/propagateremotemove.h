@@ -51,6 +51,7 @@ public:
     void start() Q_DECL_OVERRIDE;
     void abort() Q_DECL_OVERRIDE;
     JobParallelism parallelism() Q_DECL_OVERRIDE { return OCC::PropagatorJob::WaitForFinishedInParentDirectory; }
+    void checkFiles(QStringList, QDir dir);
 private slots:
     void slotMoveJobFinished();
     void finalize();

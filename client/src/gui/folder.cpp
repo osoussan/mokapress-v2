@@ -44,6 +44,8 @@
 #include <QMessageBox>
 #include <QPushButton>
 
+#include <iostream>
+
 namespace OCC {
 
 
@@ -84,6 +86,8 @@ Folder::Folder(const FolderDefinition& definition,
     _engine.reset(new SyncEngine(_accountState->account(), path(), remoteUrl(), remotePath(), &_journal));
     // pass the setting if hidden files are to be ignored, will be read in csync_update
     _engine->setIgnoreHiddenFiles(_definition.ignoreHiddenFiles);
+
+    std::cout << "are hidden files ignored : " << std::boolalpha << _definition.ignoreHiddenFiles << std::endl;
 
     if (!setIgnoredFiles())
         qWarning("Could not read system exclude file");

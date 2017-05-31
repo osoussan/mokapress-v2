@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar cq libcrashreporter-gui.a  CMakeFiles/crashreporter-gui.dir/CrashReporter.cpp.o CMakeFiles/crashreporter-gui.dir/crashreporter-gui_automoc.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libcrashreporter-gui.a

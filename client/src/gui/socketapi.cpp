@@ -14,6 +14,8 @@
  * for more details.
  */
 
+#include <iostream>
+
 #include "socketapi.h"
 
 #include "config.h"
@@ -143,6 +145,7 @@ void SocketApi::slotNewConnection()
     DEBUG << "New connection" << socket;
     connect(socket, SIGNAL(readyRead()), this, SLOT(slotReadSocket()));
     connect(socket, SIGNAL(disconnected()), this, SLOT(onLostConnection()));
+    auto prout = socket->readAll();
     Q_ASSERT(socket->readAll().isEmpty());
 
     _listeners.append(socket);
@@ -173,6 +176,10 @@ void SocketApi::slotReadSocket()
     while(socket->canReadLine()) {
         QString line = QString::fromUtf8(socket->readLine());
         line.chop(1); // remove the '\n'
+        //FIXME change the way the "INFO" is append to the command function
+        if (line.left(6) == "SHARE:") {
+            line.replace(0, 5, "INFO");
+        }
         QString command = line.split(":").value(0);
         QString function = QString(QLatin1String("command_")).append(command);
 
@@ -326,6 +333,8 @@ void SocketApi::command_RETRIEVE_FILE_STATUS(const QString& argument, QIODevice*
 
 void SocketApi::command_SHARE(const QString& localFile, QIODevice* socket)
 {
+    std::cout << "in command_SHARE" << std::endl;
+
     if (!socket) {
         qDebug() << Q_FUNC_INFO << "No valid socket object.";
         return;
@@ -383,6 +392,54 @@ void SocketApi::command_SHARE(const QString& localFile, QIODevice* socket)
         sendMessage(socket, message);
 
         emit shareCommandReceived(remotePath, localFileClean, allowReshare);
+    }
+}
+
+void SocketApi::command_INFO(const QString& localFile, QIODevice* socket) {
+
+    if (!socket) {
+        qDebug() << Q_FUNC_INFO << "No valid socket object.";
+        return;
+    }
+
+    Folder *shareFolder = FolderMan::instance()->folderForPath(localFile);
+    if (!shareFolder) {
+        const QString message = QLatin1String("INFO:NOP:")+QDir::toNativeSeparators(localFile);
+        // files that are not within a sync folder are not synced.
+        sendMessage(socket, message);
+    }
+    else
+    {
+        const QString folderForPath = shareFolder->path();
+        const QString remotePath = shareFolder->remotePath() + localFile.right(localFile.count()-folderForPath.count()+1);
+
+        const QString message = QLatin1String("INFO:OK:")+QDir::toNativeSeparators(localFile);
+        sendMessage(socket, message);
+
+        emit infoCommandReceived(remotePath, localFile);
+    }
+}
+
+void SocketApi::command_WEB(const QString& localFile, QIODevice* socket)
+{
+    if (!socket) {
+        qDebug() << Q_FUNC_INFO << "No valid socket object.";
+        return;
+    }
+
+    Folder *shareFolder = FolderMan::instance()->folderForPath(localFile);
+    if (!shareFolder) {
+        const QString message = QLatin1String("WEB:NOP:")+QDir::toNativeSeparators(localFile);
+        // files that are not within a sync folder are not synced.
+        sendMessage(socket, message);
+    } else {
+        const QString folderForPath = shareFolder->path();
+        const QString remotePath = shareFolder->remotePath() + localFile.right(localFile.count()-folderForPath.count()+1);
+
+        const QString message = QLatin1String("WEB:OK:")+QDir::toNativeSeparators(localFile);
+        sendMessage(socket, message);
+
+        emit webCommandReceived(remotePath, localFile);
     }
 }
 
@@ -448,9 +505,18 @@ void SocketApi::command_SHARE_STATUS(const QString &localFile, QIODevice *socket
     }
 }
 
+void SocketApi::command_INFO_MENU_TITLE(const QString &, QIODevice *socket)
+{
+    sendMessage(socket, QLatin1String("SHARE_MENU_TITLE:") + tr("Informations %1", "parameter is Mokapress").arg(Theme::instance()->appNameGUI()));
+}
+
 void SocketApi::command_SHARE_MENU_TITLE(const QString &, QIODevice* socket)
 {
-    sendMessage(socket, QLatin1String("SHARE_MENU_TITLE:") + tr("Share with %1", "parameter is ownCloud").arg(Theme::instance()->appNameGUI()));
+    sendMessage(socket, QLatin1String("SHARE_MENU_TITLE:") + tr("Share with %1", "parameter is Mokapress").arg(Theme::instance()->appNameGUI()));
+}
+
+void SocketApi::command_WEB_MENU_TITLE(const QString &, QIODevice *socket) {
+    sendMessage(socket, QLatin1String("WEB_MENU_TITLE:") + tr("Créer une page web", "parameter is Mokapress"));
 }
 
 QString SocketApi::buildRegisterPathMessage(const QString& path)

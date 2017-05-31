@@ -34,11 +34,16 @@ SyncJournalDb::SyncJournalDb(const QString& path, QObject *parent) :
 {
 
     _dbFile = path;
+    _configFile = path;
     if( !_dbFile.endsWith('/') ) {
         _dbFile.append('/');
     }
     _dbFile.append(".csync_journal.db");
 
+    if( !_configFile.endsWith('/') ) {
+           _configFile.append('/');
+    }
+    _configFile.append(".config");
 
 }
 

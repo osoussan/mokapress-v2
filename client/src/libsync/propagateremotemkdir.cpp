@@ -18,6 +18,7 @@
 #include "syncjournalfilerecord.h"
 #include "propagateremotedelete.h"
 #include <QFile>
+#include <QDir>
 
 namespace OCC {
 
@@ -38,6 +39,13 @@ void PropagateRemoteMkdir::start()
                          _propagator->_remoteFolder + _item->_file,
                          this);
     connect(_job, SIGNAL(finishedSignal()), SLOT(slotStartMkcolJob()));
+
+    if (!_item->_file.startsWith(QLatin1String(".config"))) {
+        QString file(_propagator->_localDir + QString(".config/") + _item->_file);
+        QDir dir;
+        dir.mkdir(file);
+    }
+
     _job->start();
 }
 

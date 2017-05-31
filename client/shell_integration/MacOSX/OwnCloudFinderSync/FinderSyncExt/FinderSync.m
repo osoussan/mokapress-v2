@@ -60,6 +60,8 @@
 	_syncClientProxy = [[SyncClientProxy alloc] initWithDelegate:self serverName:serverName];
 	_registeredDirectories = [[NSMutableSet alloc] init];
 	_shareMenuTitle = nil;
+	_infoMenuTitle = nil;
+	_webMenuTitle = nil;
 	
 	[_syncClientProxy start];
 	return self;
@@ -101,10 +103,16 @@
 		}
 	}];
 
-	if (_shareMenuTitle && !onlyRootsSelected) {
+
+
+	if ((_shareMenuTitle || _infoMenuTitle) && !onlyRootsSelected) {
+
 		NSMenu *menu = [[NSMenu alloc] initWithTitle:@""];
 		NSMenuItem *item = [menu addItemWithTitle:_shareMenuTitle action:@selector(shareMenuAction:) keyEquivalent:@"title"];
 		item.image = [[NSBundle mainBundle] imageForResource:@"app.icns"];
+
+		NSMenuItem *item2 = [menu addItemWithTitle:_webMenuTitle action:@selector(webMenuAction:) keyEquivalent:@"title"];
+		item2.image = [[NSBundle mainBundle] imageForResource:@"app.icns"];
 		
 		return menu;
 	}
@@ -119,6 +127,26 @@
 		NSString* normalizedPath = [[obj path] decomposedStringWithCanonicalMapping];
 		[_syncClientProxy askOnSocket:normalizedPath query:@"SHARE"];
 	}];
+}
+
+- (IBAction)infoMenuAction:(id)sender
+{
+	NSArray* items = [[FIFinderSyncController defaultController] selectedItemURLs];
+
+	[items enumerateObjectsUsingBlock: ^(id obj, NSUInteger idx, BOOL *stop) {
+	NSString* normalizedPath = [[obj path] decomposedStringWithCanonicalMapping];
+	[_syncClientProxy askOnSocket:normalizedPath query:@"INFO"];
+}];
+}
+
+- (IBAction)webMenuAction:(id)sender
+{
+    NSArray* items = [[FIFinderSyncController defaultController] selectedItemURLs];
+
+    [items enumerateObjectsUsingBlock: ^(id obj, NSUInteger idx, BOOL *stop) {
+    NSString* normalizedPath = [[obj path] decomposedStringWithCanonicalMapping];
+    [_syncClientProxy askOnSocket:normalizedPath query:@"WEB"];
+}];
 }
 
 #pragma mark - SyncClientProxyDelegate implementation
@@ -151,9 +179,21 @@
 	_shareMenuTitle = title;
 }
 
+- (void)setInfoMenuTitle:(NSString*)title
+{
+	_infoMenuTitle = title;
+}
+
+- (void)setWebMenuTitle:(NSString*)title
+{
+	_webMenuTitle = title;
+}
+
 - (void)connectionDidDie
 {
 	_shareMenuTitle = nil;
+	_infoMenuTitle = nil;
+    _webMenuTitle = nil;
 	
 	// This will tell Finder that this extension isn't attached to any directory
 	// until we can reconnect to the sync client.

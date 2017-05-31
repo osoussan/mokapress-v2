@@ -304,7 +304,9 @@ void AccountSettings::slotFolderWizardAccepted()
      * the same setting so far.
      * The default is to not sync hidden files
      */
-    definition.ignoreHiddenFiles = folderMan->ignoreHiddenFiles();
+
+    //definition.ignoreHiddenFiles = folderMan->ignoreHiddenFiles();
+    definition.ignoreHiddenFiles = false;
 
     auto selectiveSyncBlackList = folderWizard->property("selectiveSyncBlackList").toStringList();
 

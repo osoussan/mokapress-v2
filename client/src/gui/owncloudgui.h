@@ -17,6 +17,8 @@
 #include "systray.h"
 #include "connectionvalidator.h"
 #include "progressdispatcher.h"
+#include "infofiledialog.h"
+#include "infodirdialog.h"
 
 #include <QObject>
 #include <QPointer>
@@ -79,7 +81,11 @@ public slots:
     void slotTrayMessageIfServerUnsupported(Account *account);
     void slotShowShareDialog(const QString &sharePath, const QString &localPath, bool resharingAllowed);
     void slotRemoveDestroyedShareDialogs();
-
+    //
+    void slotShowInfoDialog(const QString &infoPath, const QString &localPath);
+    void slotCreateWebPage(const QString &filePath, const QString &localPath);
+    void slotOpenMyWeb();
+    //
 private slots:
     void slotDisplayIdle();
     void slotLogin();
@@ -116,6 +122,9 @@ private:
     QAction *_actionHelp;
     QAction *_actionQuit;
     QAction *_actionCrash;
+    //
+    QAction *_actionOpenMyWeb;
+    //
 
     QList<QAction*> _recentItemsActions;
 

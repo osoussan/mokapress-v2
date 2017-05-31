@@ -304,6 +304,7 @@ void OwncloudSetupWizard::slotCreateLocalAndRemoteFolders(const QString& localFo
     } else {
         QString res = tr("Creating local sync folder %1...").arg(localFolder);
         if( fi.mkpath( localFolder ) ) {
+            fi.mkpath(tr("%1/%2").arg(localFolder, ".config"));
             Utility::setupFavLink( localFolder );
             // FIXME: Create a local sync folder.
             res += tr("ok");
@@ -461,7 +462,8 @@ void OwncloudSetupWizard::slotAssistantFinished( int result )
             FolderDefinition folderDefinition;
             folderDefinition.localPath = localFolder;
             folderDefinition.targetPath = _remoteFolder;
-            folderDefinition.ignoreHiddenFiles = folderMan->ignoreHiddenFiles();
+            //folderDefinition.ignoreHiddenFiles = folderMan->ignoreHiddenFiles();
+            folderDefinition.ignoreHiddenFiles = false;
 
             auto f = folderMan->addFolder(account, folderDefinition);
             if (f) {

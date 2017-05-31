@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar cq libupdater.a  CMakeFiles/updater.dir/updater/ocupdater.cpp.o CMakeFiles/updater.dir/updater/updateinfo.cpp.o CMakeFiles/updater.dir/updater/updater.cpp.o CMakeFiles/updater.dir/updater/sparkleupdater_mac.mm.o CMakeFiles/updater.dir/updater_automoc.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libupdater.a

@@ -30,6 +30,7 @@
 #include <QtGui>
 
 #include <stdlib.h>
+#include <iostream>
 
 namespace OCC
 {
@@ -205,7 +206,7 @@ void OwncloudWizard::appendToConfigurationLog( const QString& msg, LogType /*typ
 
 void OwncloudWizard::setOCUrl( const QString& url )
 {
-  _setupPage->setServerUrl( url );
+    _setupPage->setServerUrl( url );
 }
 
 AbstractCredentials* OwncloudWizard::getCredentials() const

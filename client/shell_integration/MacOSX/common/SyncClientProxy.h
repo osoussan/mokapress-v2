@@ -21,6 +21,8 @@
 - (void)registerPath:(NSString*)path;
 - (void)unregisterPath:(NSString*)path;
 - (void)setShareMenuTitle:(NSString*)title;
+- (void)setInfoMenuTitle:(NSString*)title;
+- (void)setWebMenuTitle:(NSString*)title;
 - (void)connectionDidDie;
 @end
 

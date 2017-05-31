@@ -73,7 +73,9 @@
 	[_remoteEnd setProtocolForProxy:@protocol(ChannelProtocol)];
 
 	// Everything is set up, start querying
-	[self askOnSocket:@"" query:@"SHARE_MENU_TITLE"];
+	[self askOnSocket:@"" query:@"INFO_MENU_TITLE"];
+    [self askOnSocket:@"" query:@"WEB_MENU_TITLE"];
+
 }
 
 - (void)scheduleRetry
@@ -121,8 +123,12 @@
 		[_delegate unregisterPath:path];
 	} else if( [[chunks objectAtIndex:0 ] isEqualToString:@"SHARE_MENU_TITLE"] ) {
 		[_delegate setShareMenuTitle:[chunks objectAtIndex:1]];
-	} else {
-		NSLog(@"SyncState: Unknown command %@", [chunks objectAtIndex:0]);
+	} else if( [[chunks objectAtIndex:0 ] isEqualToString:@"INFO_MENU_TITLE"] ) {
+		[_delegate setInfoMenuTitle:[chunks objectAtIndex:1]];
+	} else if( [[chunks objectAtIndex:0 ] isEqualToString:@"WEB_MENU_TITLE"] ) {
+        [_delegate setWebMenuTitle:[chunks objectAtIndex:1]];
+    } else {
+		NSLog(@"SyncState: Unknown command _%@_", [chunks objectAtIndex:0]);
 	}
 }
 

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+cd ../client
+mkdir build_linux
+cd build_linux
+
+cmake ..
+make
+sudo make install
+
+mv bin/owncloud ../../linux
+#cd ../
+#rm -rf build_linux

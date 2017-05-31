@@ -261,7 +261,7 @@ public:
 class OwncloudPropagator : public QObject {
     Q_OBJECT
 
-    PropagateItemJob *createJob(const SyncFileItemPtr& item);
+    PropagateItemJob    *createJob(const SyncFileItemPtr& item);
     QScopedPointer<PropagateDirectory> _rootJob;
 
 public:

@@ -175,6 +175,7 @@ private:
 
     SqlDatabase _db;
     QString _dbFile;
+    QString _configFile;
     QMutex _mutex; // Public functions are protected with the mutex.
     int _transaction;
 

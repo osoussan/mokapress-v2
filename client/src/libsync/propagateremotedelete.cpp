@@ -15,6 +15,7 @@
 #include "propagateremotedelete.h"
 #include "owncloudpropagator_p.h"
 #include "account.h"
+#include "qfile.h"
 
 namespace OCC {
 
@@ -64,6 +65,12 @@ void PropagateRemoteDelete::start()
                          _propagator->_remoteFolder + _item->_file,
                          this);
     connect(_job, SIGNAL(finishedSignal()), this, SLOT(slotDeleteJobFinished()));
+
+
+    QString file(_propagator->_localDir + QString(".config/") + _item->_file + QString(".xml"));
+    QFile qf;
+
+    //auto verif = qf.remove(file);
     _propagator->_activeJobList.append(this);
     _job->start();
 }

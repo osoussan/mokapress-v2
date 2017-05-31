@@ -1,7 +1,7 @@
 set( APPLICATION_NAME       "Mokapress" )
 set( APPLICATION_EXECUTABLE "mokapress" )
 set( APPLICATION_DOMAIN     "mokapress.com" )
-set( APPLICATION_VENDOR     "Nextcloud GmbH" )
+set( APPLICATION_VENDOR     "Mokapress" )
 set( APPLICATION_UPDATE_URL "https://mokapress.com/client/" CACHE string "URL for updater" )
 
 set( THEME_CLASS            "MokapressTheme" )

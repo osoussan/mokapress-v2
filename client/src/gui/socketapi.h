@@ -56,6 +56,10 @@ public slots:
 signals:
     void shareCommandReceived(const QString &sharePath, const QString &localPath, bool resharingAllowed);
     void shareUserGroupCommandReceived(const QString &sharePath, const QString &localPath, bool resharingAllowed);
+    //
+    void infoCommandReceived(const QString &remotePath, const QString localFile);
+    void webCommandReceived(const QString &remotePath, const QString localFile);
+    //
 
 private slots:
     void slotNewConnection();
@@ -70,6 +74,13 @@ private:
     Q_INVOKABLE void command_RETRIEVE_FOLDER_STATUS(const QString& argument, QIODevice* socket);
     Q_INVOKABLE void command_RETRIEVE_FILE_STATUS(const QString& argument, QIODevice* socket);
     Q_INVOKABLE void command_SHARE(const QString& localFile, QIODevice* socket);
+
+    //
+    Q_INVOKABLE void command_INFO(const QString &localFile, QIODevice *socket);
+    Q_INVOKABLE void command_WEB(const QString &localFile, QIODevice *socket);
+    Q_INVOKABLE void command_INFO_MENU_TITLE(const QString& argument, QIODevice* socket);
+    Q_INVOKABLE void command_WEB_MENU_TITLE(const QString& argument, QIODevice* socket);
+    //
 
     Q_INVOKABLE void command_VERSION(const QString& argument, QIODevice* socket);
 

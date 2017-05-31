@@ -25,6 +25,8 @@
 	NSMutableSet* _requestedPaths;
 
 	NSString *_shareMenuTitle;
+	NSString *_infoMenuTitle;
+	NSString *_webMenuTitle;
 }
 
 @property (nonatomic, retain) NSString* filterFolder;
@@ -34,7 +36,10 @@
 - (BOOL)isRegisteredPath:(NSString*)path isDirectory:(BOOL)isDir;
 - (void)askForIcon:(NSString*)path isDirectory:(BOOL)isDir;
 - (void)menuItemClicked:(NSDictionary*)actionDictionary;
+- (void)menuItemClicked2:(NSDictionary*)actionDictionary;
 
 - (NSString*) shareItemTitle;
+- (NSString*) infoItemTitle;
+- (NSString*) webItemTitle;
 
 @end

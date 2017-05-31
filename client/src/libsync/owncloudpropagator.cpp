@@ -245,7 +245,13 @@ void PropagateItemJob::slotRestoreJobCompleted(const SyncFileItem& item )
 // ================================================================================
 
 PropagateItemJob* OwncloudPropagator::createJob(const SyncFileItemPtr &item) {
+
+    ///
+    qDebug() << "createJob";
+    ///
+
     bool deleteExisting = item->_instruction == CSYNC_INSTRUCTION_TYPE_CHANGE;
+    qDebug() << "Instruction is : " << item->_instruction;
     switch(item->_instruction) {
         case CSYNC_INSTRUCTION_REMOVE:
             if (item->_direction == SyncFileItem::Down) return new PropagateLocalRemove(this, item);
@@ -748,7 +754,11 @@ void CleanupPollsJob::start()
     auto info = _pollInfos.first();
     _pollInfos.pop_front();
     SyncJournalFileRecord record = _journal->getFileRecord(info._file);
+
     SyncFileItemPtr item(new SyncFileItem(record.toSyncFileItem()));
+    item->_file = info._file;
+    item->_modtime = info._modtime;
+
     if (record.isValid()) {
         PollJob *job = new PollJob(_account, info._url, item, _journal, _localPath, this);
         connect(job, SIGNAL(finishedSignal()), SLOT(slotPollFinished()));

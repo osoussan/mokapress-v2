@@ -11,6 +11,8 @@
  * for more details.
  */
 
+#include <iostream>
+
 #include "application.h"
 #include "owncloudgui.h"
 #include "theme.h"
@@ -18,6 +20,9 @@
 #include "configfile.h"
 #include "utility.h"
 #include "progressdispatcher.h"
+#include "infodirdialog.h"
+#include "infofiledialog.h"
+#include "createweb.h"
 #include "owncloudsetupwizard.h"
 #include "sharedialog.h"
 #if defined(Q_OS_MAC)
@@ -495,6 +500,7 @@ void ownCloudGui::setupContextMenu()
     _contextMenu->addSeparator();
 
     if (isConfigured && atLeastOneConnected) {
+        _contextMenu->addAction(_actionOpenMyWeb);
         _contextMenu->addAction(_actionStatus);
         _contextMenu->addMenu(_recentActionsMenu);
         _contextMenu->addSeparator();
@@ -600,6 +606,12 @@ void ownCloudGui::setupActions()
     _actionSettings = new QAction(tr("Settings..."), this);
     _actionRecent = new QAction(tr("Details..."), this);
     _actionRecent->setEnabled( true );
+
+    //
+    _actionOpenMyWeb  = new QAction(tr("Voir mon site web"), this);
+    _actionOpenMyWeb->setEnabled(true);
+    QObject::connect(_actionOpenMyWeb, SIGNAL(triggered(bool)), SLOT(slotOpenMyWeb()));
+    //
 
     QObject::connect(_actionRecent, SIGNAL(triggered(bool)), SLOT(slotShowSyncProtocol()));
     QObject::connect(_actionSettings, SIGNAL(triggered(bool)), SLOT(slotShowSettings()));
@@ -877,6 +889,7 @@ void ownCloudGui::raiseDialog( QWidget *raiseWidget )
 
 void ownCloudGui::slotShowShareDialog(const QString &sharePath, const QString &localPath, bool resharingAllowed)
 {
+
     const auto folder = FolderMan::instance()->folderForPath(localPath);
     if (!folder) {
         qDebug() << "Could not open share dialog for" << localPath << "no responsible folder found";
@@ -916,6 +929,57 @@ void ownCloudGui::slotShowShareDialog(const QString &sharePath, const QString &l
     }
     raiseDialog(w);
 }
+
+void ownCloudGui::slotShowInfoDialog(const QString &infoPath, const QString &localPath)
+{
+    /*
+    AccountPtr account = AccountManager::instance()->account();
+    if (!account) {
+        qDebug() << "Could not open info dialog because no account is configured";
+        return;
+    } */
+    QFileInfo file = QFileInfo(localPath);
+    if (file.isFile())
+    {
+        InfoFileDialog *w = new InfoFileDialog(infoPath, localPath);
+        w->setWindowFlags(w->windowFlags() | Qt::WindowStaysOnTopHint);
+        raiseDialog(w);
+    }
+    else
+    {
+        InfoDirDialog  *w = new InfoDirDialog(infoPath, localPath);
+        w->setWindowFlags(w->windowFlags() | Qt::WindowStaysOnTopHint);
+        raiseDialog(w);
+    }
+//    w->getShares();
+//    w->setAttribute( Qt::WA_DeleteOnClose, true );
+}
+
+void ownCloudGui::slotCreateWebPage(const QString &filePath, const QString &localPath)
+{
+    /*
+    AccountPtr account = AccountManager::instance()->account();
+        if (!account) {
+            qDebug() << "Could not open info dialog because no account is configured";
+            return;
+        }
+    */
+    CreateWeb *w = new CreateWeb(filePath, localPath);
+    w->setWindowFlags(w->windowFlags() | Qt::WindowStaysOnTopHint);
+    raiseDialog(w);
+}
+
+void ownCloudGui::slotOpenMyWeb()
+{
+    //auto account = AccountManager::instance()->accountState()->account();
+    auto account = AccountManager::instance()->accounts()[0]->account();
+    if (AbstractCredentials *cred = account->credentials()) {
+        auto user = cred->user();
+        QDesktopServices::openUrl(QUrl(tr("http://users.mokapress.com/%1").arg(cred->user())));
+    }
+}
+
+//
 
 void ownCloudGui::slotRemoveDestroyedShareDialogs()
 {

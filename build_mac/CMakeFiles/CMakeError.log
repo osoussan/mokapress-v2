@@ -1,0 +1,117 @@
+Determining if the include file sys/iconv.h exists failed with the following output:
+Change Dir: /Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3957275625/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3957275625.dir/build.make CMakeFiles/cmTryCompileExec3957275625.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3957275625.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -fPIC -fstack-protector  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.8   -o CMakeFiles/cmTryCompileExec3957275625.dir/CheckIncludeFile.c.o   -c /Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/iconv.h' file not found
+#include <sys/iconv.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3957275625.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec3957275625/fast] Error 2
+
+
+Determining if the prototype iconv exists for HAVE_ICONV_CONST failed with the following output:
+Change Dir: /Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1449950824/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1449950824.dir/build.make CMakeFiles/cmTryCompileExec1449950824.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1449950824.dir/CheckPrototypeDefinition.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -fPIC -fstack-protector  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.8   -o CMakeFiles/cmTryCompileExec1449950824.dir/CheckPrototypeDefinition.c.o   -c /Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:8: error: conflicting types for 'iconv'
+size_t iconv(iconv_t cd, const char **inbuf, size_t *inbytesleft, char **outbuf, size_t *outbytesleft) {
+       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/iconv.h:69:8: note: previous declaration is here
+size_t iconv (iconv_t /*cd*/,
+       ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1449950824.dir/CheckPrototypeDefinition.c.o] Error 1
+make: *** [cmTryCompileExec1449950824/fast] Error 2
+
+
+#include <iconv.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef iconv
+  cmakeRequireSymbol(0, &iconv);
+#endif
+}
+
+size_t iconv(iconv_t cd, const char **inbuf, size_t *inbytesleft, char **outbuf, size_t *outbytesleft) {
+  return -1;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the include file argp.h exists failed with the following output:
+Change Dir: /Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1693568420/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1693568420.dir/build.make CMakeFiles/cmTryCompileExec1693568420.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1693568420.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -fPIC -fstack-protector  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.8   -o CMakeFiles/cmTryCompileExec1693568420.dir/CheckIncludeFile.c.o   -c /Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'argp.h' file not found
+#include <argp.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1693568420.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec1693568420/fast] Error 2
+
+
+Determining if the function nanosleep exists in the rt failed with the following output:
+Change Dir: /Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec385169243/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec385169243.dir/build.make CMakeFiles/cmTryCompileExec385169243.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec385169243.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -fPIC -fstack-protector -DCHECK_FUNCTION_EXISTS=nanosleep -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.8   -o CMakeFiles/cmTryCompileExec385169243.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec385169243
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec385169243.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -fPIC -fstack-protector -DCHECK_FUNCTION_EXISTS=nanosleep -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.8 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec385169243.dir/CheckFunctionExists.c.o  -o cmTryCompileExec385169243  -lrt 
+ld: library not found for -lrt
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec385169243] Error 1
+make: *** [cmTryCompileExec385169243/fast] Error 2
+
+
+Determining if the function clock_gettime exists in the rt failed with the following output:
+Change Dir: /Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2624876406/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2624876406.dir/build.make CMakeFiles/cmTryCompileExec2624876406.dir/build
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_progress_report /Users/builder/mokapress-v2/build-mac/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2624876406.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -fPIC -fstack-protector -DCHECK_FUNCTION_EXISTS=clock_gettime -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.8   -o CMakeFiles/cmTryCompileExec2624876406.dir/CheckFunctionExists.c.o   -c /usr/local/Cellar/cmake/3.2.3/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2624876406
+/usr/local/Cellar/cmake/3.2.3/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2624876406.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -fPIC -fstack-protector -DCHECK_FUNCTION_EXISTS=clock_gettime -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -mmacosx-version-min=10.8 -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2624876406.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2624876406  -lrt 
+ld: library not found for -lrt
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec2624876406] Error 1
+make: *** [cmTryCompileExec2624876406/fast] Error 2
+
+
