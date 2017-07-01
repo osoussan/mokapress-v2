@@ -656,4 +656,21 @@ void ConfigFile::setCertificatePasswd(const QString& cPasswd)
      settings.sync();
 }
 
+//Languages
+static const QLatin1String langFile("sync-language.lst");
+
+QString ConfigFile::userLanguages() const {
+
+    QFileInfo fi;
+
+    fi.setFile( configPath(), langFile );
+
+    qDebug() << "ConfigPath is : " << configPath().toUtf8().constData();
+
+    if( ! fi.isReadable() ) {
+        fi.setFile( configPath(), QLatin1String("sync-language.lst") );
+    }
+    return fi.absoluteFilePath();
+}
+
 }

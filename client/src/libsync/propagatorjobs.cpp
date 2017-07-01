@@ -130,6 +130,12 @@ namespace OCC {
             std::cout << "PropagateLocalMkdir for .config" << std::endl;
             QString file(QString(".config/") + _item->_file);
             localDir.mkdir(file);
+            /*
+#ifdef _WIN32
+#include "Windows.h"
+            SetFileAttributes("Mokapress/.config", FILE_ATTRIBUTE_HIDDEN);
+#endif
+             */
         }
         done(SyncFileItem::Success);
     }
@@ -137,7 +143,6 @@ namespace OCC {
     void PropagateLocalRename::checkFiles(QStringList list, QDir dir)
     {
         foreach (QString file, list) {
-            std::cout << "Checking : " << file.toUtf8().constData() << std::endl;
             QFileInfo fileInfo(tr("%1/%2").arg(dir.absolutePath(), file));
             if((file != "." && file != "..") && fileInfo.isDir())
             {

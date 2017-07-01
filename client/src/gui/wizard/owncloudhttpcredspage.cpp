@@ -123,20 +123,8 @@ void OwncloudHttpCredsPage::cleanupPage()
     _ui.lePassword->clear();
 }
 
-void OwncloudHttpCredsPage::setAuthType (WizardCommon::AuthType type)
-{
-  _authTypeKnown = true;
-}
-
-
 bool OwncloudHttpCredsPage::validatePage()
 {
-    if (!_authTypeKnown)
-    {
-        OwncloudWizard* ocWizard = qobject_cast< OwncloudWizard* >(wizard());
-        ocWizard->connectToUrl();
-        return false;
-    } 
     if (_ui.leUsername->text().isEmpty() || _ui.lePassword->text().isEmpty()) {
         return false;
     }
@@ -146,7 +134,6 @@ bool OwncloudHttpCredsPage::validatePage()
         _checking = true;
         startSpinner();
         emit completeChanged();
-	auto var = field("OCUrl").toString().simplified();
         emit connectToOCUrl(field("OCUrl").toString().simplified());
 
         return false;

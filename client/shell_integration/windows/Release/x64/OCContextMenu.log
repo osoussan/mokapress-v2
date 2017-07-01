@@ -1,0 +1,12 @@
+﻿  dllmain.cpp
+  OCClientInterface.cpp
+  OCContextMenu.cpp
+OCContextMenu.cpp(85): warning C4838: la conversion de 'DWORD' en 'int' requiert une conversion restrictive
+  OCContextMenuRegHandler.cpp
+  OCContextMenuFactory.cpp
+OCContextMenuFactory.cpp(42): warning C4838: la conversion de 'DWORD' en 'int' requiert une conversion restrictive
+  stdafx.cpp
+  Génération de code en cours...
+     Création de la bibliothèque C:\Users\sylva\work\mokapress-v2-code\client\shell_integration\windows\..\..\binary\shell_integration\windows\Release\x64\OCContextMenu_x64.lib et de l'objet C:\Users\sylva\work\mokapress-v2-code\client\shell_integration\windows\..\..\binary\shell_integration\windows\Release\x64\OCContextMenu_x64.exp
+  OCContextMenu.vcxproj -> C:\Users\sylva\work\mokapress-v2-code\client\shell_integration\windows\..\..\binary\shell_integration\windows\Release\x64\OCContextMenu_x64.dll
+  OCContextMenu.vcxproj -> C:\Users\sylva\work\mokapress-v2-code\client\shell_integration\windows\..\..\binary\shell_integration\windows\Release\x64\OCContextMenu_x64.pdb (Full PDB)

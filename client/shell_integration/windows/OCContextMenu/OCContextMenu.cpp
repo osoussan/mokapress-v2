@@ -21,23 +21,37 @@
 #include <shlwapi.h>
 #include <shellapi.h>
 #include <StringUtil.h>
+#include <assert.h>
+
+#include <iostream>
+#include <locale>
+#include <codecvt>
 
 extern HINSTANCE g_hInst;
 extern long g_cDllRef;
 
-#define IDM_SHARE             0
+#define IDM_SHARE          	0
+#define IDM_INFO           	0
+#define IDM_WEB				1
 
 
 
-OCContextMenu::OCContextMenu(void) 
-	: m_cRef(1)
-	, m_pszMenuText(L"&Share")
-	, m_pszVerb("ocshare")
-	, m_pwszVerb(L"ocshare")
-	, m_pszVerbCanonicalName("OCShareViaOC")
-	, m_pwszVerbCanonicalName(L"OCShareViaOC")
-	, m_pszVerbHelpText("Share via ownCloud")
-	, m_pwszVerbHelpText(L"Share via ownCloud")
+OCContextMenu::OCContextMenu(void)
+	: m_cRef(2)
+ 	, m_pszMenuText(L"&Info")
+    , m_pszVerb("ocinfo")
+    , m_pwszVerb(L"ocinfo")
+    , m_pszVerbCanonicalName("OCInfo")
+    , m_pwszVerbCanonicalName(L"OCInfo")
+    , m_pszVerbHelpText("Informations Mokapress")
+    , m_pwszVerbHelpText(L"Informations Mokapress")
+	, m_pszMenuText2(L"&Web")
+	, m_pszVerb2("ocweb")
+	, m_pwszVerb2(L"ocweb")
+	, m_pszVerbCanonicalName2("OCWeb")
+	, m_pwszVerbCanonicalName2(L"OCWeb")
+	, m_pszVerbHelpText2("Créer une page")
+	, m_pwszVerbHelpText2(L"Créer une page")
 {
 	InterlockedIncrement(&g_cDllRef);
 }
@@ -50,9 +64,13 @@ OCContextMenu::~OCContextMenu(void)
 
 void OCContextMenu::OnVerbDisplayFileName(HWND hWnd)
 {
-	OCClientInterface::ShareObject(std::wstring(m_szSelectedFile));
+	OCClientInterface::InfoObject(std::wstring(m_szSelectedFile));
 }
 
+void OCContextMenu::OnVerbDisplayFileName2(HWND hWnd)
+{
+	OCClientInterface::WebObject(std::wstring(m_szSelectedFile));
+}
 
 #pragma region IUnknown
 
@@ -151,6 +169,7 @@ IFACEMETHODIMP OCContextMenu::QueryContextMenu(HMENU hMenu, UINT indexMenu, UINT
 	}
 
 	OCClientInterface::ContextMenuInfo info = OCClientInterface::FetchInfo();
+
 	bool skip = true;
 	for (const std::wstring path : info.watchedDirectories) {
 		if (StringUtil::begins_with(std::wstring(m_szSelectedFile), path)) {
@@ -164,8 +183,10 @@ IFACEMETHODIMP OCContextMenu::QueryContextMenu(HMENU hMenu, UINT indexMenu, UINT
 	}
 
 	InsertSeperator(hMenu, indexMenu);
+
 	indexMenu++;
 
+    /*
 	assert(!info.shareMenuTitle.empty());
 	MENUITEMINFO mii = { sizeof(mii) };
 	mii.fMask = MIIM_STRING | MIIM_FTYPE | MIIM_ID | MIIM_STATE;
@@ -176,32 +197,53 @@ IFACEMETHODIMP OCContextMenu::QueryContextMenu(HMENU hMenu, UINT indexMenu, UINT
 	if (!InsertMenuItem(hMenu, indexMenu, TRUE, &mii))
 	{
 		return HRESULT_FROM_WIN32(GetLastError());
+	} */
+
+	assert(!info.infoMenuTitle.empty());
+	MENUITEMINFO mii = { sizeof(mii) };
+	mii.fMask = MIIM_STRING | MIIM_FTYPE | MIIM_ID | MIIM_STATE;
+	mii.wID = idCmdFirst + IDM_INFO; //0 + 0
+	mii.fType = MFT_STRING;
+	mii.dwTypeData = &info.infoMenuTitle[0];
+	mii.fState = MFS_ENABLED;
+	if (!InsertMenuItem(hMenu, indexMenu++, TRUE, &mii)) {
+		return HRESULT_FROM_WIN32(GetLastError());
 	}
 
-	indexMenu++;
-	InsertSeperator(hMenu, indexMenu);
+	assert(!info.webMenuTitle.empty());
+	MENUITEMINFO mii2 = { sizeof(mii2) };
+	mii2.fMask = MIIM_STRING | MIIM_FTYPE | MIIM_ID | MIIM_STATE;
+	mii2.wID = idCmdFirst + IDM_WEB; //0 + 1
+	mii2.fType = MFT_STRING;
+	mii2.dwTypeData = &info.webMenuTitle[0];
+	mii2.fState = MFS_ENABLED;
+	if (!InsertMenuItem(hMenu, indexMenu++, TRUE, &mii2))
+	{
+		return HRESULT_FROM_WIN32(GetLastError());
+	}
 
+	InsertSeperator(hMenu, indexMenu);
 
 	// Return an HRESULT value with the severity set to SEVERITY_SUCCESS. 
 	// Set the code value to the offset of the largest command identifier 
 	// that was assigned, plus one (1).
-	return MAKE_HRESULT(SEVERITY_SUCCESS, 0, USHORT(IDM_SHARE + 1));
+	return MAKE_HRESULT(SEVERITY_SUCCESS, 0, USHORT(idCmdFirst + IDM_WEB + 1));
 }
 
 IFACEMETHODIMP OCContextMenu::InvokeCommand(LPCMINVOKECOMMANDINFO pici)
 {
 
 	// For the Unicode case, if the high-order word is not zero, the 
-	// command's verb string is in lpcmi->lpVerbW. 
+	// command's verb string is in lpcmi->lpVerbW.
+
 	if (HIWORD(((CMINVOKECOMMANDINFOEX*)pici)->lpVerbW))
 	{
 		// Is the verb supported by this context menu extension?
-		if (StrCmpIW(((CMINVOKECOMMANDINFOEX*)pici)->lpVerbW, m_pwszVerb) == 0)
-		{
+		if (StrCmpIW(((CMINVOKECOMMANDINFOEX*)pici)->lpVerbW, m_pwszVerb) == 0) {
 			OnVerbDisplayFileName(pici->hwnd);
-		}
-		else
-		{
+		} else if (StrCmpIW(((CMINVOKECOMMANDINFOEX*)pici)->lpVerbW, m_pwszVerb2) == 0) {
+			OnVerbDisplayFileName2(pici->hwnd);
+		} else {
 			// If the verb is not recognized by the context menu handler, it 
 			// must return E_FAIL to allow it to be passed on to the other 
 			// context menu handlers that might implement that verb.
@@ -215,12 +257,11 @@ IFACEMETHODIMP OCContextMenu::InvokeCommand(LPCMINVOKECOMMANDINFO pici)
 	{
 		// Is the command identifier offset supported by this context menu 
 		// extension?
-		if (LOWORD(pici->lpVerb) == IDM_SHARE)
-		{
+		if (LOWORD(pici->lpVerb) == IDM_INFO) {
 			OnVerbDisplayFileName(pici->hwnd);
-		}
-		else
-		{
+		} else if (LOWORD(pici->lpVerb) == IDM_WEB) {
+			OnVerbDisplayFileName2(pici->hwnd);
+		} else {
 			// If the verb is not recognized by the context menu handler, it 
 			// must return E_FAIL to allow it to be passed on to the other 
 			// context menu handlers that might implement that verb.
@@ -236,8 +277,8 @@ IFACEMETHODIMP OCContextMenu::GetCommandString(UINT_PTR idCommand,
 {
 	HRESULT hr = E_INVALIDARG;
 
-	if (idCommand == IDM_SHARE)
-	{
+	if (idCommand == IDM_INFO) {
+
 		switch (uFlags)
 		{
 		case GCS_HELPTEXTW:
@@ -253,6 +294,26 @@ IFACEMETHODIMP OCContextMenu::GetCommandString(UINT_PTR idCommand,
 			// idCommand.
 			hr = StringCchCopy(reinterpret_cast<PWSTR>(pszName), cchMax,
 				m_pwszVerbCanonicalName);
+			break;
+
+		default:
+			hr = S_OK;
+		}
+	} else if (idCommand == IDM_WEB) {
+
+		switch (uFlags)
+		{
+		case GCS_HELPTEXTW:
+			// Only useful for pre-Vista versions of Windows that have a
+			// Status bar.
+			hr = StringCchCopy(reinterpret_cast<PWSTR>(pszName), cchMax, m_pwszVerbHelpText2);
+			break;
+
+		case GCS_VERBW:
+			// GCS_VERBW is an optional feature that enables a caller to
+			// discover the canonical name for the verb passed in through
+			// idCommand.
+			hr = StringCchCopy(reinterpret_cast<PWSTR>(pszName), cchMax, m_pwszVerbCanonicalName2);
 			break;
 
 		default:

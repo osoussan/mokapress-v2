@@ -48,14 +48,23 @@ private:
 
 	// The method that handles the "display" verb.
 	void OnVerbDisplayFileName(HWND hWnd);
+	void OnVerbDisplayFileName2(HWND hWnd);
 
 	PWSTR m_pszMenuText;
 	PCSTR m_pszVerb;
-	PCWSTR m_pwszVerb;
-	PCSTR m_pszVerbCanonicalName;
-	PCWSTR m_pwszVerbCanonicalName;
-	PCSTR m_pszVerbHelpText;
-	PCWSTR m_pwszVerbHelpText;
+    PCWSTR m_pwszVerb;
+    PCSTR m_pszVerbCanonicalName;
+    PCWSTR m_pwszVerbCanonicalName;
+    PCSTR m_pszVerbHelpText;
+    PCWSTR m_pwszVerbHelpText;
+    //
+    PWSTR m_pszMenuText2;
+	PCSTR m_pszVerb2;
+	PCWSTR m_pwszVerb2;
+	PCSTR m_pszVerbCanonicalName2;
+	PCWSTR m_pwszVerbCanonicalName2;
+	PCSTR m_pszVerbHelpText2;
+	PCWSTR m_pwszVerbHelpText2;
 };
 	
 #endif //OCCONTEXTMENU_H

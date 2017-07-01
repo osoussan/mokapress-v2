@@ -1,0 +1,11 @@
+﻿  stdafx.cpp
+  DllMain.cpp
+  OCOverlay.cpp
+  OCOverlayFactory.cpp
+  OCOverlayRegistrationHandler.cpp
+     Création de la bibliothèque C:\Users\sylva\work\mokapress-v2-code\client\shell_integration\windows\..\..\binary\shell_integration\windows\Release\Win32\OCOverlays_x86.lib et de l'objet C:\Users\sylva\work\mokapress-v2-code\client\shell_integration\windows\..\..\binary\shell_integration\windows\Release\Win32\OCOverlays_x86.exp
+  Génération de code en cours
+  All 297 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Fin de la génération du code
+  OCOverlays.vcxproj -> C:\Users\sylva\work\mokapress-v2-code\client\shell_integration\windows\..\..\binary\shell_integration\windows\Release\Win32\OCOverlays_x86.dll
+  OCOverlays.vcxproj -> C:\Users\sylva\work\mokapress-v2-code\client\shell_integration\windows\..\..\binary\shell_integration\windows\Release\Win32\OCOverlays_x86.pdb (Full PDB)

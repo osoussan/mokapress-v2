@@ -7,131 +7,445 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>401</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Informations Mokapress</string>
   </property>
-  <widget class="QWidget" name="verticalLayoutWidget">
+  <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
     <rect>
-     <x>9</x>
-     <y>9</y>
-     <width>381</width>
-     <height>281</height>
+     <x>10</x>
+     <y>10</y>
+     <width>371</width>
+     <height>341</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <property name="leftMargin">
-     <number>5</number>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <property name="whatsThis">
+     <string/>
     </property>
-    <property name="topMargin">
-     <number>5</number>
-    </property>
-    <property name="rightMargin">
-     <number>5</number>
-    </property>
-    <property name="bottomMargin">
-     <number>5</number>
-    </property>
-    <item>
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Title</string>
+    <attribute name="title">
+     <string>Tab 1</string>
+    </attribute>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>361</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="leftMargin">
+       <number>5</number>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="TitleLineEdit"/>
-    </item>
-    <item>
-     <widget class="QLabel" name="descrLabel_2">
-      <property name="text">
-       <string>Description</string>
+      <property name="topMargin">
+       <number>5</number>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QTextEdit" name="descrTextEdit"/>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>Keyword</string>
+      <property name="rightMargin">
+       <number>5</number>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="keywordLineEdit_2"/>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_4">
-      <property name="text">
-       <string>Select</string>
+      <property name="bottomMargin">
+       <number>5</number>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QComboBox" name="selectComboBox">
       <item>
-       <property name="text">
-        <string>diaporama</string>
-       </property>
+       <widget class="QLabel" name="titleLabel_1">
+        <property name="text">
+         <string>Title</string>
+        </property>
+       </widget>
       </item>
       <item>
-       <property name="text">
-        <string>slide</string>
-       </property>
+       <widget class="QLineEdit" name="TitleLineEdit_1"/>
       </item>
-     </widget>
-    </item>
-    <item>
-     <widget class="QDialogButtonBox" name="buttonBox2">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+      <item>
+       <widget class="QLabel" name="descrLabel_1">
+        <property name="text">
+         <string>Description</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="descrTextEdit_1"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="keywordLabel_1">
+        <property name="text">
+         <string>Keyword</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="keywordLineEdit_1"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="selectLabel_1">
+        <property name="text">
+         <string>Select</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="selectComboBox_1">
+        <item>
+         <property name="text">
+          <string>diaporama</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>slide</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Tab 2</string>
+    </attribute>
+    <widget class="QWidget" name="verticalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>361</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>5</number>
       </property>
-      <property name="standardButtons">
-       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      <property name="topMargin">
+       <number>5</number>
       </property>
-     </widget>
-    </item>
-   </layout>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="titleLabel_2">
+        <property name="text">
+         <string>Title</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="TitleLineEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="descrLabel_2">
+        <property name="text">
+         <string>Description</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="descrTextEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="keywordLabel_2">
+        <property name="text">
+         <string>Keyword</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="keywordLineEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="selectLabel_2">
+        <property name="text">
+         <string>Select</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="selectComboBox_2">
+        <item>
+         <property name="text">
+          <string>diaporama</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>slide</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QWidget" name="verticalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>361</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="titleLabel_3">
+        <property name="text">
+         <string>Title</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="TitleLineEdit_3"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="descrLabel_3">
+        <property name="text">
+         <string>Description</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="descrTextEdit_3"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="keywordLabel_3">
+        <property name="text">
+         <string>Keyword</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="keywordLineEdit_3"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="selectLabel_3">
+        <property name="text">
+         <string>Select</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="selectComboBox_3">
+        <item>
+         <property name="text">
+          <string>diaporama</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>slide</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QWidget" name="verticalLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>361</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="titleLabel_4">
+        <property name="text">
+         <string>Title</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="TitleLineEdit_4"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="descrLabel_4">
+        <property name="text">
+         <string>Description</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="descrTextEdit_4"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="keywordLabel_4">
+        <property name="text">
+         <string>Keyword</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="keywordLineEdit_4"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="selectLabel_4">
+        <property name="text">
+         <string>Select</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="selectComboBox_4">
+        <item>
+         <property name="text">
+          <string>diaporama</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>slide</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QWidget" name="verticalLayoutWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>361</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="titleLabel_5">
+        <property name="text">
+         <string>Title</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="TitleLineEdit_5"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="descrLabel_5">
+        <property name="text">
+         <string>Description</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="descrTextEdit_5"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="keywordLabel_5">
+        <property name="text">
+         <string>Keyword</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="keywordLineEdit_5"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="selectLabel_5">
+        <property name="text">
+         <string>Select</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="selectComboBox_5">
+        <item>
+         <property name="text">
+          <string>diaporama</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>slide</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>360</y>
+     <width>351</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
   </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonBox2</sender>
-   <signal>accepted()</signal>
-   <receiver>OCC::InfoDirDialog</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox2</sender>
-   <signal>rejected()</signal>
-   <receiver>OCC::InfoDirDialog</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

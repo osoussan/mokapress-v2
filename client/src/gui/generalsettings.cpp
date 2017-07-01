@@ -26,6 +26,7 @@
 #include "updater/updater.h"
 #include "updater/ocupdater.h"
 #include "ignorelisteditor.h"
+#include "languagesettings.h"
 
 #include "config.h"
 
@@ -83,7 +84,7 @@ GeneralSettings::GeneralSettings(QWidget *parent) :
             .arg(Theme::instance()->systrayIconFlavor(true));
     _ui->monoIconsCheckBox->setVisible(QDir(themeDir).exists());
 
-    connect(_ui->ignoredFilesButton, SIGNAL(clicked()), SLOT(slotIgnoreFilesEditor()));
+    connect(_ui->languageFilesButton, SIGNAL(clicked()), SLOT(slotLanguageFilesEditor()));
 }
 
 GeneralSettings::~GeneralSettings()
@@ -150,15 +151,24 @@ void GeneralSettings::slotToggleOptionalDesktopNotifications(bool enable)
     cfgFile.setOptionalDesktopNotifications(enable);
 }
 
-void GeneralSettings::slotIgnoreFilesEditor()
+void GeneralSettings::slotLanguageFilesEditor()
 {
+    /*
     if (_ignoreEditor.isNull()) {
         _ignoreEditor = new IgnoreListEditor(this);
         _ignoreEditor->setAttribute( Qt::WA_DeleteOnClose, true );
         _ignoreEditor->open();
     } else {
         ownCloudGui::raiseDialog(_ignoreEditor);
+    } */
+    if (_languageEditor.isNull()) {
+        _languageEditor = new LanguageSettings(this);
+        _languageEditor->setAttribute(Qt::WA_DeleteOnClose, true);
+        _languageEditor->open();
+    } else {
+        ownCloudGui::raiseDialog(_languageEditor);
     }
 }
+
 
 } // namespace OCC

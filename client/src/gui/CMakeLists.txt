@@ -41,6 +41,7 @@ set(client_UI
     infodirdialog.ui
     infofiledialog.ui
     createweb.ui
+    languagesettings.ui
 )
 
 qt_wrap_ui(client_UI_SRCS ${client_UI})
@@ -114,6 +115,7 @@ set(client_SRCS
     infodirdialog.cpp
     infofiledialog.cpp
     createweb.cpp
+    languagesettings.cpp
 )
 
 

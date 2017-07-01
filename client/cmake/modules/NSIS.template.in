@@ -89,6 +89,7 @@ ReserveFile "${NSISDIR}\Plugins\InstallOptions.dll"
 ; Include some required header files.
 ;-----------------------------------------------------------------------------
 !include LogicLib.nsh ;Used by APPDATA uninstaller.
+!include nsDialogs.nsh ;Used by APPDATA uninstaller.
 !include MUI2.nsh ;Used by APPDATA uninstaller.
 !include InstallOptions.nsh ;Required by MUI2 to support old MUI_INSTALLOPTIONS.
 !include Memento.nsh ;Remember user selections.
@@ -107,7 +108,7 @@ ReserveFile "${NSISDIR}\Plugins\InstallOptions.dll"
 !define MEMENTO_REGISTRY_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPLICATION_NAME}"
 
 ;-----------------------------------------------------------------------------
-; Modern User Interface (MUI) definitions and setup.
+; Modern User Interface (MUI) defintions and setup.
 ;-----------------------------------------------------------------------------
 !define MUI_ABORTWARNING
 !define MUI_ICON ${NSI_PATH}\installer.ico
@@ -125,6 +126,7 @@ ReserveFile "${NSISDIR}\Plugins\InstallOptions.dll"
    !define MUI_FINISHPAGE_SHOWREADME_TEXT $MUI_FINISHPAGE_SHOWREADME_TEXT_STRING
 !endif
 !ifdef OPTION_FINISHPAGE_LAUNCHER
+   !define MUI_FINISHPAGE_TEXT "Mokapress necessite un redemarrage pour fonctionner correctement." 
    !define MUI_FINISHPAGE_NOAUTOCLOSE
    !define MUI_FINISHPAGE_RUN
    !define MUI_FINISHPAGE_RUN_FUNCTION "LaunchApplication"
@@ -145,6 +147,7 @@ Page custom PageReinstall PageLeaveReinstall
    !insertmacro MUI_PAGE_FINISH
 !endif
 !insertmacro MUI_UNPAGE_CONFIRM
+UninstPage custom un.UnPageUserAppData un.UnPageUserAppDataLeave
 !insertmacro MUI_UNPAGE_INSTFILES
 
 ;-----------------------------------------------------------------------------
@@ -173,12 +176,10 @@ VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "${VERSION}"
       StrCmp $LANGUAGE ${LANG_SPANISH} Spanish 0
       StrCmp $LANGUAGE ${LANG_ITALIAN} Italian 0
       StrCmp $LANGUAGE ${LANG_ESTONIAN} Estonian 0
-      StrCmp $LANGUAGE ${LANG_GREEK} Greek 0
-      StrCmp $LANGUAGE ${LANG_BASQUE} Basque 0
-      StrCmp $LANGUAGE ${LANG_GALICIAN} Galician 0
-      StrCmp $LANGUAGE ${LANG_POLISH} Polish 0
-      StrCmp $LANGUAGE ${LANG_TURKISH} Turkish 0
-      StrCmp $LANGUAGE ${LANG_NORWEGIAN} Norwegian 0
+      StrCmp $LANGUAGE ${LANG_GREEK} Basque 0
+      StrCmp $LANGUAGE ${LANG_GREEK} Galician 0
+      StrCmp $LANGUAGE ${LANG_GREEK} Slovak 0
+      StrCmp $LANGUAGE ${LANG_GREEK} Turkish 0
       StrCmp $LANGUAGE ${LANG_PORTUGUESEBR} Brazilian EndLanguageCmp
       German:
       !include "${source_path}/admin/win/nsi/l10n\German.nsh"
@@ -213,17 +214,14 @@ VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "${VERSION}"
       Galician:
       !include "${source_path}/admin/win/nsi/l10n\Galician.nsh"
       Goto EndLanguageCmp
-      Polish:
-      !include "${source_path}/admin/win/nsi/l10n\Polish.nsh"
+      Slovak:
+      !include "${source_path}/admin/win/nsi/l10n\Slovak.nsh"
       Goto EndLanguageCmp
       Turkish:
       !include "${source_path}/admin/win/nsi/l10n\Turkish.nsh"
       Goto EndLanguageCmp
       Brazilian:
       !include "${source_path}/admin/win/nsi/l10n\PortugueseBR.nsh"
-      Goto EndLanguageCmp
-      Norwegian:
-      !include "${source_path}/admin/win/nsi/l10n\Norwegian.nsh"
       EndLanguageCmp:
 
    FunctionEnd
@@ -245,9 +243,18 @@ VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "${VERSION}"
 #                                                                            #
 ##############################################################################
 
+#Function LaunchApplication
+#	!insertmacro UAC_AsUser_Call Function LaunchApplicationAsUser ${UAC_SYNCREGISTERS} 
+#FunctionEnd
+
+#Function LaunchApplicationAsUser
+#   Exec "$INSTDIR\${APPLICATION_EXECUTABLE}"
+#FunctionEnd
+
 Function LaunchApplication
    !insertmacro UAC_AsUser_ExecShell "" "$INSTDIR\${APPLICATION_EXECUTABLE}" "" "" ""
 FunctionEnd
+
 
 ##############################################################################
 #                                                                            #
@@ -257,7 +264,7 @@ FunctionEnd
 
 !macro CheckForProcess processName gotoWhenFound gotoWhenNotFound
    ${nsProcess::FindProcess} ${processName} $R0
-   StrCmp $R0 0 ${gotoWhenFound} ${gotoWhenNotFound}
+   StrCmp $R0 "0" ${gotoWhenNotFound} ${gotoWhenFound}
 !macroend
 
 !macro ConfirmEndProcess processName
@@ -361,6 +368,7 @@ Function PageLeaveReinstall
       RMDir $INSTDIR
    no_remove_uninstaller:
       StrCmp $R0 "2" 0 +3
+      #UAC::Unload
       Quit
       BringToFront
    reinst_done:
@@ -379,6 +387,7 @@ Section "${APPLICATION_NAME}" SEC_APPLICATION
    DetailPrint $SEC_APPLICATION_DETAILS
    SetDetailsPrint listonly
    SetOutPath "$INSTDIR"
+   SetRebootFlag true
 
    ;Main executable & csync
    File "${BUILD_PATH}\bin\${APPLICATION_EXECUTABLE}"
@@ -410,9 +419,6 @@ Section "${APPLICATION_NAME}" SEC_APPLICATION
    ;License & release notes.
    File "@CPACK_RESOURCE_FILE_LICENSE@"
    ;File /oname=NOTES.txt ${NSI_PATH}\RELEASE_NOTES.txt
-
-   ;Qt config:
-   File "${NSI_PATH}\qt.conf"
 
    ;Qt stuff:
    File "${QT_DLL_PATH}\Qt5Core.dll"
@@ -476,7 +482,6 @@ SectionEnd
       CreateDirectory "$INSTDIR\shellext"
       !define LIBRARY_COM
       !define LIBRARY_SHELL_EXTENSION
-      !define LIBRARY_IGNORE_VERSION
       ${If} ${RunningX64}
          !define LIBRARY_X64
          !insertmacro InstallLib DLL NOTSHARED REBOOT_PROTECTED "${SOURCE_PATH}\binary\shell_integration\windows\Release\x64\OCUtil_x64.dll" "$INSTDIR\shellext\OCUtil_x64.dll" "$INSTDIR\shellext"
@@ -490,7 +495,6 @@ SectionEnd
       ${Endif}
       !undef LIBRARY_COM
       !undef LIBRARY_SHELL_EXTENSION
-      !undef LIBRARY_IGNORE_VERSION
    ${MementoSectionEnd}
 !endif
 
@@ -559,7 +563,7 @@ Section -post
    DetailPrint $UNINSTALLER_REGISTRY_Detail
    SetDetailsPrint listonly
 
-   ;Version numbers used to detect existing installation version for comparison.
+   ;Version numbers used to detect existing installation version for comparisson.
    WriteRegStr HKLM "Software\${APPLICATION_VENDOR}\${APPLICATION_NAME}" "" $INSTDIR
    WriteRegDWORD HKLM "Software\${APPLICATION_VENDOR}\${APPLICATION_NAME}" "VersionMajor" "${VER_MAJOR}"
    WriteRegDWORD HKLM "Software\${APPLICATION_VENDOR}\${APPLICATION_NAME}" "VersionMinor" "${VER_MINOR}"
@@ -581,6 +585,7 @@ Section -post
    WriteRegDWORD ${MEMENTO_REGISTRY_ROOT} "${MEMENTO_REGISTRY_KEY}" "NoRepair" "1"
 
 
+   SetRebootFlag true
    SetDetailsPrint textonly
    DetailPrint $UNINSTALLER_FINISHED_Detail
 SectionEnd
@@ -590,6 +595,40 @@ SectionEnd
 #   UNINSTALLER SECTION                                                      #
 #                                                                            #
 ##############################################################################
+
+Var UnPageUserAppDataDialog
+Var UnPageUserAppDataCheckbox
+Var UnPageUserAppDataCheckbox_State
+Var UnPageUserAppDataEditBox
+
+Function un.UnPageUserAppData
+   !insertmacro MUI_HEADER_TEXT $UNINSTALLER_APPDATA_TITLE $UNINSTALLER_APPDATA_SUBTITLE
+   nsDialogs::Create /NOUNLOAD 1018
+   Pop $UnPageUserAppDataDialog
+
+   ${If} $UnPageUserAppDataDialog == error
+      Abort
+   ${EndIf}
+
+   ${NSD_CreateLabel} 0 0 100% 12u $UNINSTALLER_APPDATA_LABEL_1
+   Pop $0
+
+   ${NSD_CreateText} 0 13u 100% 12u "$LOCALAPPDATA\${APPLICATION_NAME}"
+   Pop $UnPageUserAppDataEditBox
+   SendMessage $UnPageUserAppDataEditBox ${EM_SETREADONLY} 1 0
+
+   ${NSD_CreateLabel} 0 46u 100% 24u $UNINSTALLER_APPDATA_LABEL_2
+   Pop $0
+
+   ${NSD_CreateCheckbox} 0 71u 100% 8u $UNINSTALLER_APPDATA_CHECKBOX
+   Pop $UnPageUserAppDataCheckbox
+
+   nsDialogs::Show
+FunctionEnd
+
+Function un.UnPageUserAppDataLeave
+   ${NSD_GetState} $UnPageUserAppDataCheckbox $UnPageUserAppDataCheckbox_State
+FunctionEnd
 
 Function un.EnsureOwncloudShutdown
    !insertmacro CheckAndConfirmEndProcess "${APPLICATION_EXECUTABLE}"
@@ -615,7 +654,6 @@ Section Uninstall
    !ifdef OPTION_SECTION_SC_SHELL_EXT
       !define LIBRARY_COM
       !define LIBRARY_SHELL_EXTENSION
-      !define LIBRARY_IGNORE_VERSION
       ${If} ${HasSection} SEC_SHELL_EXT
         DetailPrint "Uninstalling x64 overlay DLLs"
         !define LIBRARY_X64
@@ -623,6 +661,7 @@ Section Uninstall
         !insertmacro UnInstallLib REGDLL NOTSHARED REBOOT_PROTECTED "$INSTDIR\shellext\OCOverlays_x64.dll"
         !insertmacro UnInstallLib DLL NOTSHARED REBOOT_PROTECTED "$INSTDIR\shellext\OCUtil_x64.dll"
         !undef LIBRARY_X64
+     ${Else}
         DetailPrint "Uninstalling x86 overlay DLLs"
         !insertmacro UnInstallLib REGDLL NOTSHARED REBOOT_PROTECTED "$INSTDIR\shellext\OCContextMenu_x86.dll"
         !insertmacro UnInstallLib REGDLL NOTSHARED REBOOT_PROTECTED "$INSTDIR\shellext\OCOverlays_x86.dll"
@@ -630,7 +669,6 @@ Section Uninstall
       ${EndIf}
       !undef LIBRARY_COM
       !undef LIBRARY_SHELL_EXTENSION
-      !undef LIBRARY_IGNORE_VERSION
   !endif
 
    ;Start menu shortcut
@@ -666,6 +704,11 @@ Section Uninstall
 
    ;Remove all the Program Files.
    RMDir /r $INSTDIR
+
+   ;Uninstall User Data if option is checked, otherwise skip.
+   ${If} $UnPageUserAppDataCheckbox_State == ${BST_CHECKED}
+      RMDir /r "$LOCALAPPDATA\${APPLICATION_NAME}"
+   ${EndIf}
 
    DeleteRegKey ${MEMENTO_REGISTRY_ROOT} "${MEMENTO_REGISTRY_KEY}"
 
@@ -721,27 +764,26 @@ Function .onInit
 
    ${MementoSectionRestore}
 
-   UAC_TryAgain:
-      !insertmacro UAC_RunElevated
-      ${Switch} $0
-      ${Case} 0
-          ${IfThen} $1 = 1 ${|} Quit ${|} ;we are the outer process, the inner process has done its work, we are done
-          ${IfThen} $3 <> 0 ${|} ${Break} ${|} ;we are admin, let the show go on
-          ${If} $1 = 3 ;RunAs completed successfully, but with a non-admin user
-             MessageBox mb_YesNo|mb_ICONEXCLAMATION|MB_TOPMOST|MB_SETFOREGROUND $UAC_INSTALLER_REQUIRE_ADMIN /SD IDNO IDYES UAC_TryAgain IDNO 0
-          ${EndIf}
-          ;fall-through and die
-      ${Case} 1223
-         MessageBox MB_ICONSTOP|MB_TOPMOST|MB_SETFOREGROUND $UAC_INSTALLER_REQUIRE_ADMIN
-         Quit
-      ${Case} 1062
-         MessageBox MB_ICONSTOP|MB_TOPMOST|MB_SETFOREGROUND $UAC_ERROR_LOGON_SERVICE
-         Quit
-      ${Default}
-         MessageBox MB_ICONSTOP "$UAC_ERROR_ELEVATE $0"
-         Abort
-         Quit
-      ${EndSwitch}
+   UAC_Elevate:
+      #UAC::RunElevated
+	  !insertmacro UAC_RunElevated
+      StrCmp 1223 $0 UAC_ElevationAborted ; UAC dialog aborted by user?
+      StrCmp 0 $0 0 UAC_Err ; Error?
+      StrCmp 1 $1 0 UAC_Success ;Are we the real deal or just the wrapper?
+      Quit
+
+   UAC_Err:
+      MessageBox MB_ICONSTOP "$UAC_ERROR_ELEVATE $0"
+      Abort
+
+   UAC_ElevationAborted:
+      Abort
+
+   UAC_Success:
+      StrCmp 1 $3 +4 ;Admin?
+      StrCmp 3 $1 0 UAC_ElevationAborted ;Try again?
+      MessageBox MB_ICONSTOP $UAC_INSTALLER_REQUIRE_ADMIN
+      goto UAC_Elevate
 
    ;Prevent multiple instances.
    System::Call 'kernel32::CreateMutexA(i 0, i 0, t "${APPLICATION_SHORTNAME}Installer") i .r1 ?e'
@@ -759,12 +801,6 @@ Function .onInit
 
    ;Shutdown ${APPLICATION_NAME} in case Add/Remove re-installer option used.
    Call EnsureOwncloudShutdown
-
-   ReadRegStr $R0 ${MEMENTO_REGISTRY_ROOT} "${MEMENTO_REGISTRY_KEY}" "InstallLocation"
-   ${If} ${Silent}
-   ${AndIf} $R0 != ""
-       ExecWait '"$R0\Uninstall.exe" /S _?=$R0'
-   ${EndIf}
 FunctionEnd
 
 Function .onInstSuccess
@@ -774,18 +810,15 @@ Function .onInstSuccess
       WriteRegDWORD HKLM "Software\${APPLICATION_VENDOR}\${APPLICATION_NAME}" "skipUpdateCheck" "1"
    ${EndIf}
 
-   ; TODO: Only needed to when updating from 2.1.{0,1}. Remove in due time.
-   Delete /REBOOTOK $INSTDIR\bearer\qgenericbearer.dll
-   Delete /REBOOTOK $INSTDIR\bearer\qnativewifibearer.dll
-   RMDir /REBOOTOK $INSTDIR\bearer
-
    ${If} ${Silent}
    ${AndIf} $InstallRunIfSilent == "yes"
      Call LaunchApplication
    ${EndIf}
+   #UAC::Unload ;Must call unload!
 FunctionEnd
 
 Function .onInstFailed
+   #UAC::Unload ;Must call unload!
 FunctionEnd
 
 ##############################################################################
@@ -797,27 +830,25 @@ FunctionEnd
 Function un.onInit
    Call un.SetLang
 
-   UAC_TryAgain:
-      !insertmacro UAC_RunElevated
-      ${Switch} $0
-      ${Case} 0
-          ${IfThen} $1 = 1 ${|} Quit ${|} ;we are the outer process, the inner process has done its work, we are done
-          ${IfThen} $3 <> 0 ${|} ${Break} ${|} ;we are admin, let the show go on
-          ${If} $1 = 3 ;RunAs completed successfully, but with a non-admin user
-             MessageBox mb_YesNo|mb_ICONEXCLAMATION|MB_TOPMOST|MB_SETFOREGROUND $UAC_UNINSTALLER_REQUIRE_ADMIN /SD IDNO IDYES UAC_TryAgain IDNO 0
-          ${EndIf}
-          ;fall-through and die
-      ${Case} 1223
-         MessageBox MB_ICONSTOP|MB_TOPMOST|MB_SETFOREGROUND $UAC_UNINSTALLER_REQUIRE_ADMIN
-         Quit
-      ${Case} 1062
-         MessageBox MB_ICONSTOP|MB_TOPMOST|MB_SETFOREGROUND $UAC_ERROR_LOGON_SERVICE
-         Quit
-      ${Default}
-         MessageBox MB_ICONSTOP "$UAC_ERROR_ELEVATE $0"
-         Abort
-         Quit
-      ${EndSwitch}
+	UAC_Elevate:
+	  !insertmacro UAC_RunElevated
+      StrCmp 1223 $0 UAC_ElevationAborted ; UAC dialog aborted by user?
+      StrCmp 0 $0 0 UAC_Err ; Error?
+      StrCmp 1 $1 0 UAC_Success ;Are we the real deal or just the wrapper?
+      Quit
+
+   UAC_Err:
+      MessageBox MB_ICONSTOP "$UAC_ERROR_ELEVATE $0"
+      Abort
+
+   UAC_ElevationAborted:
+      Abort
+
+   UAC_Success:
+      StrCmp 1 $3 +4 ;Admin?
+      StrCmp 3 $1 0 UAC_ElevationAborted ;Try again?
+      MessageBox MB_ICONSTOP $UAC_UNINSTALLER_REQUIRE_ADMIN
+      goto UAC_Elevate
 
    ;Prevent multiple instances.
    System::Call 'kernel32::CreateMutexA(i 0, i 0, t "${APPLICATION_SHORTNAME}Uninstaller") i .r1 ?e'
@@ -831,7 +862,9 @@ Function un.onInit
 FunctionEnd
 
 Function un.onUnInstSuccess
+   #UAC::Unload ;Must call unload!
 FunctionEnd
 
 Function un.onUnInstFailed
+   #UAC::Unload ;Must call unload!
 FunctionEnd

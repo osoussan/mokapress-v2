@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Platforms\Win32\PlatformToolsets\v141_xp\Toolset.targets(36,5): warning MSB8003: Variable WindowsSdkDir_71A introuvable dans le Registre. TargetFrameworkVersion ou PlatformToolset ont peut-être été définis avec un numéro de version non valide.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(371,5): warning MSB8003: Variable WindowsSDKDir introuvable dans le Registre. TargetFrameworkVersion ou PlatformToolset ont peut-être été définis avec un numéro de version non valide.
+  stdafx.cpp
+c:\users\sylva\work\mokapress-v2-code\client\shell_integration\windows\ocutil\stdafx.h(7): fatal error C1083: Impossible d'ouvrir le fichier include : 'windows.h' : No such file or directory

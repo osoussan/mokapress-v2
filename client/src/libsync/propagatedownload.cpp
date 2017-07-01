@@ -310,6 +310,7 @@ void PropagateDownloadFileQNAM::start()
     if (_propagator->_abortRequested.fetchAndAddRelaxed(0))
         return;
 
+    qDebug() << "PropagateDownloadFileQNAM::start()";
     qDebug() << Q_FUNC_INFO << _item->_file << _propagator->_activeJobList.count();
     _stopwatch.start();
 
@@ -347,7 +348,13 @@ void PropagateDownloadFileQNAM::start()
     }
 
     if (tmpFileName.isEmpty()) {
-        tmpFileName = createDownloadTmpFileName(_item->_file);
+        //tmpFileName = createDownloadTmpFileName(_item->_file);
+        tmpFileName = _item->_file;
+        //add a dot at the begining of the filename to hide the file.
+        int slashPos = tmpFileName.lastIndexOf('/');
+        tmpFileName.insert(slashPos+1, '.');
+        //add the suffix
+        tmpFileName += ".~" + QString::number(uint(qrand()), 16);
     }
 
     _tmpFile.setFileName(_propagator->getFilePath(tmpFileName));
@@ -600,6 +607,7 @@ void PropagateDownloadFileQNAM::deleteExistingFolder()
     }
 }
 
+    /*
 namespace { // Anonymous namespace for the recall feature
 static QString makeRecallFileName(const QString &fn)
 {
@@ -653,6 +661,7 @@ static void preserveGroupOwnership(const QString& fileName, const QFileInfo& fi)
 #endif
 }
 } // end namespace
+*/
 
 void PropagateDownloadFileQNAM::transmissionChecksumValidated(const QByteArray &checksumType, const QByteArray &checksum)
 {
@@ -687,6 +696,8 @@ void PropagateDownloadFileQNAM::downloadFinished()
 {
     QString fn = _propagator->getFilePath(_item->_file);
 
+    qDebug() << "in downloadfinished";
+
     // In case of file name clash, report an error
     // This can happen if another parallel download saved a clashing file.
     if (_propagator->localFileNameClash(_item->_file)) {
@@ -717,6 +728,11 @@ void PropagateDownloadFileQNAM::downloadFinished()
         qDebug() << "Created conflict file" << fn << "->" << conflictFileName;
     }
 
+    QFileInfo existingFile(fn);
+    if(FileSystem::fileExists(fn) && existingFile.permissions() != _tmpFile.permissions()) {
+        _tmpFile.setPermissions(existingFile.permissions());
+    }
+
     FileSystem::setModTime(_tmpFile.fileName(), _item->_modtime);
     // We need to fetch the time again because some file systems such as FAT have worse than a second
     // Accuracy, and we really need the time from the file system. (#3103)
@@ -728,7 +744,8 @@ void PropagateDownloadFileQNAM::downloadFinished()
         if (existingFile.permissions() != _tmpFile.permissions()) {
             _tmpFile.setPermissions(existingFile.permissions());
         }
-        preserveGroupOwnership(_tmpFile.fileName(), existingFile);
+        //TODO check this in case of need of a fix
+        //preserveGroupOwnership(_tmpFile.fileName(), existingFile);
 
         // Check whether the existing file has changed since the discovery
         // phase by comparing size and mtime to the previous values. This
@@ -755,6 +772,21 @@ void PropagateDownloadFileQNAM::downloadFinished()
     QString error;
     _propagator->addTouchedFile(fn);
     // The fileChanged() check is done above to generate better error messages.
+    qDebug() << "File is " << _tmpFile.fileName();
+    FileSystem::setFileHidden(_tmpFile.fileName(), false);
+    //TEST
+#ifdef _WIN32
+
+    std::size_t     pos = 0;
+    std::string     current_string = (_tmpFile.fileName()).toLocal8Bit().constData();
+    if ((pos = current_string.find(".config", pos)) != std::string::npos) {
+        QString     config_path = QString::fromStdString(current_string.substr(0, (pos + 7))); // +7 = length of '.config'
+        qDebug() << "String is : " << config_path;
+        FileSystem::setFileHidden(config_path, true);
+    }
+
+#endif
+    //
     if (!FileSystem::uncheckedRenameReplace(_tmpFile.fileName(), fn, &error)) {
         qDebug() << Q_FUNC_INFO << QString("Rename failed: %1 => %2").arg(_tmpFile.fileName()).arg(fn);
 
@@ -781,7 +813,7 @@ void PropagateDownloadFileQNAM::downloadFinished()
         done(SyncFileItem::SoftError, error);
         return;
     }
-    FileSystem::setFileHidden(fn, false);
+    //FileSystem::setFileHidden(fn, false);
 
     // Maybe we downloaded a newer version of the file than we thought we would...
     // Get up to date information for the journal.
@@ -794,11 +826,6 @@ void PropagateDownloadFileQNAM::downloadFinished()
     _propagator->_journal->setDownloadInfo(_item->_file, SyncJournalDb::DownloadInfo());
     _propagator->_journal->commit("download file start2");
     done(isConflict ? SyncFileItem::Conflict : SyncFileItem::Success);
-
-    // handle the special recall file
-    if(_item->_file == QLatin1String(".sys.admin#recall#") || _item->_file.endsWith("/.sys.admin#recall#")) {
-        handleRecallFile(fn);
-    }
 
     qint64 duration = _stopwatch.elapsed();
     if (isLikelyFinishedQuickly() && duration > 5*1000) {

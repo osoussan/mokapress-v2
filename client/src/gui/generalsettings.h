@@ -18,7 +18,7 @@
 #include <QPointer>
 
 namespace OCC {
-class IgnoreListEditor;
+class LanguageSettings;
 class SyncLogDialog;
 
 namespace Ui {
@@ -43,13 +43,14 @@ private slots:
     void slotToggleLaunchOnStartup(bool);
     void slotToggleOptionalDesktopNotifications(bool);
     void slotUpdateInfo();
-    void slotIgnoreFilesEditor();
+    void slotLanguageFilesEditor();
 
 private:
     void loadMiscSettings();
 
     Ui::GeneralSettings *_ui;
-    QPointer<IgnoreListEditor> _ignoreEditor;
+    QPointer<LanguageSettings> _languageEditor;
+    //QPointer<IgnoreListEditor> _ignoreEditor;
     QPointer<SyncLogDialog> _syncLogDialog;
 };
 

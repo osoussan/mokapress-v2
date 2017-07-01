@@ -59,9 +59,9 @@ OwncloudAdvancedSetupPage::OwncloudAdvancedSetupPage()
     connect( _ui.pbSelectLocalFolder, SIGNAL(clicked()), SLOT(slotSelectFolder()));
     setButtonText(QWizard::NextButton, tr("Connect..."));
 
-    // connect( _ui.rSyncEverything, SIGNAL(clicked()), SLOT(slotSyncEverythingClicked()));
-    // connect( _ui.rSelectiveSync, SIGNAL(clicked()), SLOT(slotSelectiveSyncClicked()));
-    // connect( _ui.bSelectiveSync, SIGNAL(clicked()), SLOT(slotSelectiveSyncClicked()));
+    connect( _ui.rSyncEverything, SIGNAL(clicked()), SLOT(slotSyncEverythingClicked()));
+    connect( _ui.rSelectiveSync, SIGNAL(clicked()), SLOT(slotSelectiveSyncClicked()));
+    connect( _ui.bSelectiveSync, SIGNAL(clicked()), SLOT(slotSelectiveSyncClicked()));
 
     QIcon appIcon = theme->applicationIcon();
     _ui.lServerIcon->setText(QString());
@@ -97,7 +97,7 @@ void OwncloudAdvancedSetupPage::initializePage()
 
     _checking  = false;
     _oldLocalFolder = wizard()->property("oldLocalFolder").toString();
-    // _ui.lSelectiveSyncSizeLabel->setText(QString());
+    _ui.lSelectiveSyncSizeLabel->setText(QString());
     _ui.lSyncEverythingSizeLabel->setText(QString());
 
     // call to init label
@@ -254,7 +254,7 @@ void OwncloudAdvancedSetupPage::slotSelectFolder()
 void OwncloudAdvancedSetupPage::slotSelectiveSyncClicked()
 {
     // Because clicking on it also changes it, restore it to the previous state in case the user cancelled the dialog
-    // _ui.rSyncEverything->setChecked(_selectiveSyncBlacklist.isEmpty());
+    _ui.rSyncEverything->setChecked(_selectiveSyncBlacklist.isEmpty());
 
     AccountPtr acc = static_cast<OwncloudWizard *>(wizard())->account();
     SelectiveSyncDialog *dlg = new SelectiveSyncDialog(acc, _remoteFolder, _selectiveSyncBlacklist, this);
@@ -276,28 +276,28 @@ void OwncloudAdvancedSetupPage::slotSelectiveSyncClicked()
     }
 
     if (updateBlacklist) {
-        // if (!_selectiveSyncBlacklist.isEmpty()) {
-        //     _ui.rSelectiveSync->blockSignals(true);
-        //    _ui.rSelectiveSync->setChecked(true);
-        //    _ui.rSelectiveSync->blockSignals(false);
-        //    auto s = dlg->estimatedSize();
-        //    if (s > 0 ) {
-        //        _ui.lSelectiveSyncSizeLabel->setText(tr("(%1)").arg(Utility::octetsToString(s)));
-        //    } else {
-        //        _ui.lSelectiveSyncSizeLabel->setText(QString());
-        //    }
-        // } else {
-        //    _ui.rSyncEverything->setChecked(true);
-        //    _ui.lSelectiveSyncSizeLabel->setText(QString());
-       //  }
+        if (!_selectiveSyncBlacklist.isEmpty()) {
+            _ui.rSelectiveSync->blockSignals(true);
+            _ui.rSelectiveSync->setChecked(true);
+            _ui.rSelectiveSync->blockSignals(false);
+            auto s = dlg->estimatedSize();
+            if (s > 0 ) {
+                _ui.lSelectiveSyncSizeLabel->setText(tr("(%1)").arg(Utility::octetsToString(s)));
+            } else {
+                _ui.lSelectiveSyncSizeLabel->setText(QString());
+            }
+        } else {
+            _ui.rSyncEverything->setChecked(true);
+            _ui.lSelectiveSyncSizeLabel->setText(QString());
+        }
         wizard()->setProperty("blacklist", _selectiveSyncBlacklist);
     }
 }
 
 void OwncloudAdvancedSetupPage::slotSyncEverythingClicked()
 {
-    // _ui.lSelectiveSyncSizeLabel->setText(QString());
-    // _ui.rSyncEverything->setChecked(true);
+    _ui.lSelectiveSyncSizeLabel->setText(QString());
+    _ui.rSyncEverything->setChecked(true);
     _selectiveSyncBlacklist.clear();
 }
 

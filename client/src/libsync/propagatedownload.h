@@ -108,6 +108,10 @@ private slots:
  */
 class PropagateDownloadFileQNAM : public PropagateItemJob {
     Q_OBJECT
+    QPointer<GETFileJob> _job;
+
+    //QFile *_file;
+    QFile _tmpFile;
 public:
     PropagateDownloadFileQNAM(OwncloudPropagator* propagator,const SyncFileItemPtr& item)
         : PropagateItemJob(propagator, item), _resumeStart(0), _downloadProgress(0), _deleteExisting(false) {}
@@ -142,8 +146,8 @@ private:
 
     quint64 _resumeStart;
     qint64 _downloadProgress;
-    QPointer<GETFileJob> _job;
-    QFile _tmpFile;
+    //QPointer<GETFileJob> _job;
+    //QFile _tmpFile;
     bool _deleteExisting;
 
     QElapsedTimer _stopwatch;

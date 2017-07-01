@@ -45,7 +45,10 @@ OCClientInterface::ContextMenuInfo OCClientInterface::FetchInfo()
 	if (!socket.Connect(pipename)) {
 		return {};
 	}
-	socket.SendMsg(L"SHARE_MENU_TITLE\n");
+
+	//socket.SendMsg(L"SHARE_MENU_TITLE\n");
+	socket.SendMsg(L"INFO_MENU_TITLE\n");
+	socket.SendMsg(L"WEB_MENU_TITLE\n");
 
 	ContextMenuInfo info;
 	std::wstring response;
@@ -55,12 +58,17 @@ OCClientInterface::ContextMenuInfo OCClientInterface::FetchInfo()
 			if (StringUtil::begins_with(response, wstring(L"REGISTER_PATH:"))) {
 				wstring responsePath = response.substr(14); // length of REGISTER_PATH
 				info.watchedDirectories.push_back(responsePath);
-			}
-			else if (StringUtil::begins_with(response, wstring(L"SHARE_MENU_TITLE:"))) {
-				info.shareMenuTitle = response.substr(17); // length of SHARE_MENU_TITLE:
-				break; // Stop once we received the last sent request
-			}
-		}
+			} else if (StringUtil::begins_with(response, wstring(L"INFO_MENU_TITLE:"))) {
+				info.infoMenuTitle = response.substr(16); // length of INFO_MENU_TITLE:
+				//break; // Stop once we received the last sent request
+			} else if (StringUtil::begins_with(response, wstring(L"WEB_MENU_TITLE:"))) {
+				info.webMenuTitle = response.substr(15); // length of WEB_MENU_TITLE:
+				//break; // Stop once we received the last sent request
+			} else if (StringUtil::begins_with(response, wstring(L"SHARE_MENU_TITLE:"))) {
+                info.shareMenuTitle = response.substr(17); // length of SHARE_MENU_TITLE:
+                //break; // Stop once we received the last sent request
+            }
+        }
 		else {
 			Sleep(50);
 			++sleptCount;
@@ -82,8 +90,47 @@ void OCClientInterface::ShareObject(const std::wstring &path)
 	}
 
 	wchar_t msg[SOCK_BUFFER] = { 0 };
-	if (SUCCEEDED(StringCchPrintf(msg, SOCK_BUFFER, L"SHARE:%s\n", path.c_str())))
-	{
+	if (SUCCEEDED(StringCchPrintf(msg, SOCK_BUFFER, L"SHARE:%s\n", path.c_str()))) {
+		socket.SendMsg(msg);
+	}
+}
+
+void OCClientInterface::InfoObject(const std::wstring &path)
+{
+	auto pipename = CommunicationSocket::DefaultPipePath();
+
+	CommunicationSocket socket;
+	if (!WaitNamedPipe(pipename.data(), PIPE_TIMEOUT)) {
+		return;
+	}
+	if (!socket.Connect(pipename)) {
+		return;
+	}
+
+	wchar_t msg[SOCK_BUFFER] = { 0 };
+	if (SUCCEEDED(StringCchPrintf(msg, SOCK_BUFFER, L"INFO:%s\n", path.c_str()))) {
+		socket.SendMsg(msg);
+	}
+}
+
+
+void OCClientInterface::WebObject(const std::wstring &path) {
+
+	//auto pipename = std::wstring(L"\\\\.\\pipe\\");
+    //pipename += L"Mokapress";
+
+    auto pipename = CommunicationSocket::DefaultPipePath();
+
+	CommunicationSocket socket;
+	if (!WaitNamedPipe(pipename.data(), PIPE_TIMEOUT)) {
+		return;
+	}
+	if (!socket.Connect(pipename)) {
+		return;
+	}
+
+	wchar_t msg[SOCK_BUFFER] = {0};
+	if (SUCCEEDED(StringCchPrintf(msg, SOCK_BUFFER, L"WEB:%s\n", path.c_str()))) {
 		socket.SendMsg(msg);
 	}
 }

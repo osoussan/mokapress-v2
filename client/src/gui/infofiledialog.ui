@@ -6,134 +6,455 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>401</width>
-    <height>482</height>
+    <width>520</width>
+    <height>543</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Informations Mokapress</string>
   </property>
-  <widget class="QWidget" name="verticalLayoutWidget">
+  <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>10</y>
-     <width>381</width>
-     <height>461</height>
+     <y>9</y>
+     <width>491</width>
+     <height>471</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <property name="sizeConstraint">
-     <enum>QLayout::SetDefaultConstraint</enum>
-    </property>
-    <property name="leftMargin">
-     <number>5</number>
-    </property>
-    <property name="topMargin">
-     <number>5</number>
-    </property>
-    <property name="rightMargin">
-     <number>5</number>
-    </property>
-    <property name="bottomMargin">
-     <number>5</number>
-    </property>
-    <item>
-     <widget class="QLabel" name="titleLabel">
-      <property name="text">
-       <string>Title</string>
+   <property name="currentIndex">
+    <number>4</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Tab 1</string>
+    </attribute>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>481</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_1">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="titleLineEdit"/>
-    </item>
-    <item>
-     <widget class="QLabel" name="description1Label">
-      <property name="text">
-       <string>Description1</string>
+      <property name="leftMargin">
+       <number>5</number>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QTextEdit" name="descriptionTextEdit"/>
-    </item>
-    <item>
-     <widget class="QLabel" name="description2Label">
-      <property name="text">
-       <string>Description2</string>
+      <property name="topMargin">
+       <number>5</number>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QTextEdit" name="description2TextEdit"/>
-    </item>
-    <item>
-     <widget class="QLabel" name="description3Label">
-      <property name="text">
-       <string>Description3</string>
+      <property name="rightMargin">
+       <number>5</number>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QTextEdit" name="description3TextEdit"/>
-    </item>
-    <item>
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Keyword</string>
+      <property name="bottomMargin">
+       <number>5</number>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="keywordLineEdit"/>
-    </item>
-    <item>
-     <widget class="QDialogButtonBox" name="buttonBox">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+      <item>
+       <widget class="QLabel" name="titleLabel_1">
+        <property name="text">
+         <string>Title</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="titleLineEdit_1"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description1Label_1">
+        <property name="text">
+         <string>Description1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="descriptionTextEdit_1"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description2Label_1">
+        <property name="text">
+         <string>Description2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="description2TextEdit_1"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description3Label_1">
+        <property name="text">
+         <string>Description3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="description3TextEdit_1"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_1">
+        <property name="text">
+         <string>Keyword</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="keywordLineEdit_1"/>
+      </item>
+     </layout>
+    </widget>
+    <zorder>verticalLayoutWidget</zorder>
+    <zorder>buttonBox</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Tab 2</string>
+    </attribute>
+    <widget class="QWidget" name="verticalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>481</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
       </property>
-      <property name="standardButtons">
-       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      <property name="leftMargin">
+       <number>5</number>
       </property>
-     </widget>
-    </item>
-   </layout>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="titleLabel_2">
+        <property name="text">
+         <string>Title</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="titleLineEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description1Label_2">
+        <property name="text">
+         <string>Description1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="descriptionTextEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description2Label_2">
+        <property name="text">
+         <string>Description2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="description2TextEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description3Label_2">
+        <property name="text">
+         <string>Description3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="description3TextEdit_2"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Keyword</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="keywordLineEdit_2"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QWidget" name="verticalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>481</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="titleLabel_3">
+        <property name="text">
+         <string>Title</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="titleLineEdit_3"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description1Label_3">
+        <property name="text">
+         <string>Description1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="descriptionTextEdit_3"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description2Label_3">
+        <property name="text">
+         <string>Description2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="description2TextEdit_3"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description3Label_3">
+        <property name="text">
+         <string>Description3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="description3TextEdit_3"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Keyword</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="keywordLineEdit_3"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QWidget" name="verticalLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>481</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="titleLabel_4">
+        <property name="text">
+         <string>Title</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="titleLineEdit_4"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description1Label_4">
+        <property name="text">
+         <string>Description1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="descriptionTextEdit_4"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description2Label_4">
+        <property name="text">
+         <string>Description2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="description2TextEdit_4"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description3Label_4">
+        <property name="text">
+         <string>Description3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="description3TextEdit_4"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Keyword</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="keywordLineEdit_4"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+    <widget class="QWidget" name="verticalLayoutWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>481</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="titleLabel_5">
+        <property name="text">
+         <string>Title</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="titleLineEdit_5"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description1Label_5">
+        <property name="text">
+         <string>Description1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="descriptionTextEdit_5"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description2Label_5">
+        <property name="text">
+         <string>Description2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="description2TextEdit_5"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="description3Label_5">
+        <property name="text">
+         <string>Description3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="description3TextEdit_5"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Keyword</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="keywordLineEdit_5"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>490</y>
+     <width>371</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
   </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>OCC::InfoFileDialog</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>OCC::InfoFileDialog</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

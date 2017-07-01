@@ -1,4 +1,4 @@
-/*
+    /*
  * Copyright (C) by Dominik Schmidt <dev@dominik-schmidt.de>
  * Copyright (C) by Klaas Freitag <freitag@owncloud.com>
  * Copyright (C) by Roeland Jago Douma <roeland@famdouma.nl>
@@ -176,10 +176,11 @@ void SocketApi::slotReadSocket()
     while(socket->canReadLine()) {
         QString line = QString::fromUtf8(socket->readLine());
         line.chop(1); // remove the '\n'
+        /*
         //FIXME change the way the "INFO" is append to the command function
         if (line.left(6) == "SHARE:") {
             line.replace(0, 5, "INFO");
-        }
+        } */
         QString command = line.split(":").value(0);
         QString function = QString(QLatin1String("command_")).append(command);
 
@@ -507,7 +508,7 @@ void SocketApi::command_SHARE_STATUS(const QString &localFile, QIODevice *socket
 
 void SocketApi::command_INFO_MENU_TITLE(const QString &, QIODevice *socket)
 {
-    sendMessage(socket, QLatin1String("SHARE_MENU_TITLE:") + tr("Informations %1", "parameter is Mokapress").arg(Theme::instance()->appNameGUI()));
+    sendMessage(socket, QLatin1String("INFO_MENU_TITLE:") + tr("Informations %1", "parameter is Mokapress").arg(Theme::instance()->appNameGUI()));
 }
 
 void SocketApi::command_SHARE_MENU_TITLE(const QString &, QIODevice* socket)
