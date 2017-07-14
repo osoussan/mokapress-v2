@@ -46,6 +46,9 @@ public:
 
     /* returns a singleton instance. */
     static Theme* instance();
+    QString _localFolderPath;
+    virtual void setLocalFolderPath(QString);
+    virtual QString getLocalFolderPath() const;
 
     ~Theme();
 

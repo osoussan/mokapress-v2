@@ -464,4 +464,14 @@ QString Theme::quotaBaseFolder() const
 {
     return QLatin1String("/");
 }
+
+void    Theme::setLocalFolderPath(QString path) {
+    _localFolderPath = path;
+    return;
+}
+
+QString Theme::getLocalFolderPath() const {
+    return _localFolderPath;
+}
+
 } // end namespace client

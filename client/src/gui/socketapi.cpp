@@ -241,6 +241,10 @@ void SocketApi::slotUpdateFolderView(Folder *f)
                 f->syncResult().status() == SyncResult::SetupError ) {
 
             QString rootPath = removeTrailingSlash(f->path());
+
+            Theme   *theme = Theme::instance();
+            theme->setLocalFolderPath(rootPath);
+
             broadcastMessage(QLatin1String("STATUS"), rootPath,
                              f->syncEngine().syncFileStatusTracker().fileStatus("").toSocketAPIString());
 
@@ -253,6 +257,7 @@ void SocketApi::slotUpdateFolderView(Folder *f)
 
 void SocketApi::slotFileStatusChanged(const QString& systemFileName, SyncFileStatus fileStatus)
 {
+    qDebug() << "Hello";
     broadcastMessage(QLatin1String("STATUS"), systemFileName, fileStatus.toSocketAPIString());
 }
 

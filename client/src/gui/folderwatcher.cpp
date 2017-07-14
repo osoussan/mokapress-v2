@@ -102,6 +102,14 @@ void FolderWatcher::changeDetected( const QStringList& paths )
         return;
     }
 
+    if (changedPaths.size() == 1) {
+
+        QSet<QString>::const_iterator i = changedPaths.constBegin();
+        if ((*i).contains("timestamp.log", Qt::CaseInsensitive)) {
+            return;
+        }
+    }
+
     qDebug() << "detected changes in paths:" << changedPaths;
     foreach (const QString &path, changedPaths) {
         emit pathChanged(path);
