@@ -1,0 +1,3 @@
+/usr/bin/cmake -E remove -f CMakeFiles/mokapresscmd.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/mokapresscmd.dir/objects.a @CMakeFiles/mokapresscmd.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++  -Wall -Wextra -pedantic -Wno-long-long -std=c++0x -Wpedantic   -Wl,--whole-archive CMakeFiles/mokapresscmd.dir/objects.a -Wl,--no-whole-archive  -o ../../bin/mokapresscmd.exe -Wl,--out-implib,libmokapresscmd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/mokapresscmd.dir/linklibs.rsp

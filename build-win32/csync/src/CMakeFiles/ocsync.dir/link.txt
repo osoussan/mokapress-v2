@@ -1,0 +1,3 @@
+/usr/bin/cmake -E remove -f CMakeFiles/ocsync.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/ocsync.dir/objects.a @CMakeFiles/ocsync.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++   -Wall -Wextra -pedantic -Wno-long-long -std=c++0x -Wpedantic  -shared -o ../../bin/libocsync.dll -Wl,--out-implib,libocsync.dll.a -Wl,--major-image-version,2,--minor-image-version,2 -Wl,--whole-archive CMakeFiles/ocsync.dir/objects.a -Wl,--no-whole-archive @CMakeFiles/ocsync.dir/linklibs.rsp

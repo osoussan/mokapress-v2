@@ -1,0 +1,1 @@
+-I/home/user/build-win32/csync/src/std -I/home/user/client/csync/src/std -I/home/user/client/src/3rdparty/sqlite3 -I/home/user/build-win32 -I/home/user/build-win32/csync 

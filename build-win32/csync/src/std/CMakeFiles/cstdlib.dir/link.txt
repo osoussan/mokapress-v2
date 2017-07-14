@@ -1,0 +1,2 @@
+/usr/bin/i686-w64-mingw32-ar qc libcstdlib.a  CMakeFiles/cstdlib.dir/c_alloc.c.obj CMakeFiles/cstdlib.dir/c_path.c.obj CMakeFiles/cstdlib.dir/c_rbtree.c.obj CMakeFiles/cstdlib.dir/c_string.c.obj CMakeFiles/cstdlib.dir/c_time.c.obj
+/usr/bin/i686-w64-mingw32-ranlib libcstdlib.a

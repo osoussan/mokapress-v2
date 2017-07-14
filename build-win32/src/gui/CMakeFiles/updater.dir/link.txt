@@ -1,0 +1,2 @@
+/usr/bin/i686-w64-mingw32-ar qc libupdater.a  CMakeFiles/updater.dir/updater/ocupdater.cpp.obj CMakeFiles/updater.dir/updater/updateinfo.cpp.obj CMakeFiles/updater.dir/updater/updater.cpp.obj CMakeFiles/updater.dir/updater_autogen/moc_compilation.cpp.obj
+/usr/bin/i686-w64-mingw32-ranlib libupdater.a
