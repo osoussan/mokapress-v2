@@ -127,8 +127,8 @@ namespace OCC {
         }
         if (!_item->_file.startsWith(QLatin1String(".config")))
         {
-            std::cout << "PropagateLocalMkdir for .config" << std::endl;
             QString file(QString(".config/") + _item->_file);
+            qDebug() << "PropagateLocalMkdir for .config creating : " << file << "at : " << localDir.canonicalPath();
             localDir.mkdir(file);
             /*
 #ifdef _WIN32

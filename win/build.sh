@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 useradd user -u ${1:-1000}
 su - user << EOF
