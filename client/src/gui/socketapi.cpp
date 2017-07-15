@@ -244,6 +244,7 @@ void SocketApi::slotUpdateFolderView(Folder *f)
 
             Theme   *theme = Theme::instance();
             theme->setLocalFolderPath(rootPath);
+            theme->setLocalFolderName(rootPath);
 
             broadcastMessage(QLatin1String("STATUS"), rootPath,
                              f->syncEngine().syncFileStatusTracker().fileStatus("").toSocketAPIString());

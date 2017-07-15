@@ -474,4 +474,15 @@ QString Theme::getLocalFolderPath() const {
     return _localFolderPath;
 }
 
+void    Theme::setLocalFolderName(QString path) {
+
+    int index = path.lastIndexOf("/");
+    _localFolderName = path.mid(index);
+    return;
+}
+
+QString Theme::getLocalFolderName() const {
+    return _localFolderName;
+}
+
 } // end namespace client

@@ -10233,8 +10233,13 @@ src/gui/CMakeFiles/mokapress.dir/ignorelisteditor.cpp.obj: csync/config_csync.h
 src/gui/CMakeFiles/mokapress.dir/ignorelisteditor.cpp.obj: src/gui/../libsync/owncloudlib.h
 src/gui/CMakeFiles/mokapress.dir/ignorelisteditor.cpp.obj: src/gui/ui_ignorelisteditor.h
 
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/csync/src/csync.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/csync/src/std/c_private.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/src/gui/../libsync/accountfwd.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/src/gui/../libsync/configfile.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/src/gui/../libsync/syncfileitem.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/src/gui/../libsync/syncresult.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/src/gui/../libsync/theme.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/src/gui/infodirdialog.cpp
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/src/gui/infodirdialog.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/GL/gl.h
@@ -10249,6 +10254,7 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sy
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_print_pop.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_print_push.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_secapi.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_stat64.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_stdarg.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_unicode.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_timeval.h
@@ -10274,9 +10280,11 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sy
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/errhandlingapi.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/errno.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/excpt.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/fcntl.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/fibersapi.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/fileapi.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/fltwinerror.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/getopt.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/guiddef.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/handleapi.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/heapapi.h
@@ -10285,6 +10293,7 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sy
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/interlockedapi.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/intrin.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/inttypes.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/io.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/ioapiset.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/jobapi.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/ktmtypes.h
@@ -10312,6 +10321,7 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sy
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/oleauto.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/oleidl.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/poppack.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/process.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/processenv.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/processthreadsapi.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/processtopologyapi.h
@@ -10330,9 +10340,12 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sy
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/pshpack2.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/pshpack4.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/pshpack8.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/pthread_unistd.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QDateTime
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QEvent
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QFile
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QFileInfo
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QHash
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QList
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QMargins
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QMetaType
@@ -10350,6 +10363,7 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sy
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QStringList
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QTextStream
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QVariant
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QVector
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QXmlStreamWriter
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QtCore
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QtCoreDepends
@@ -10813,10 +10827,12 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sy
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sdkddkver.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sdks/_mingw_ddk.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sdks/_mingw_directx.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/io_s.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/stdio_s.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/stdlib_s.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/stralign_s.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/string_s.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/wchar_s.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/securityappcontainer.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/securitybaseapi.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/servprov.h
@@ -10833,18 +10849,22 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sy
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/stringapiset.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/swprintf.inl
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/synchapi.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sys/stat.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sys/types.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sysinfoapi.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/systemtopologyapi.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/threadpoolapiset.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/threadpoollegacyapiset.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/timezoneapi.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/tvout.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/unistd.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/unknwn.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/unknwnbase.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/urlmon.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/utilapiset.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/vadefs.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/virtdisk.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/wchar.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/winapifamily.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/winbase.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/wincon.h
@@ -10874,11 +10894,17 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sy
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/wow64apiset.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/wtypes.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/wtypesbase.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: csync/config_csync.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: src/gui/../libsync/owncloudlib.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: src/gui/ui_infodirdialog.h
 
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/csync/src/csync.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/csync/src/std/c_private.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/src/gui/../libsync/accountfwd.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/src/gui/../libsync/configfile.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/src/gui/../libsync/syncfileitem.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/src/gui/../libsync/syncresult.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/src/gui/../libsync/theme.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/src/gui/infofiledialog.cpp
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/src/gui/infofiledialog.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/GL/gl.h
@@ -10893,6 +10919,7 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/s
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_print_pop.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_print_push.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_secapi.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_stat64.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_stdarg.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_unicode.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/_timeval.h
@@ -10918,9 +10945,11 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/s
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/errhandlingapi.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/errno.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/excpt.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/fcntl.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/fibersapi.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/fileapi.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/fltwinerror.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/getopt.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/guiddef.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/handleapi.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/heapapi.h
@@ -10929,6 +10958,7 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/s
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/interlockedapi.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/intrin.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/inttypes.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/io.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/ioapiset.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/jobapi.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/ktmtypes.h
@@ -10956,6 +10986,7 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/s
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/oleauto.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/oleidl.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/poppack.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/process.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/processenv.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/processthreadsapi.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/processtopologyapi.h
@@ -10974,10 +11005,13 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/s
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/pshpack2.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/pshpack4.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/pshpack8.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/pthread_unistd.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QDateTime
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QDebug
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QEvent
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QFile
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QFileInfo
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QHash
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QList
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QMargins
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QMetaType
@@ -10995,6 +11029,7 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/s
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QStringList
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QTextStream
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QVariant
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QVector
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QXmlStreamWriter
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QtCore
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QtCoreDepends
@@ -11457,10 +11492,12 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/s
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sdkddkver.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sdks/_mingw_ddk.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sdks/_mingw_directx.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/io_s.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/stdio_s.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/stdlib_s.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/stralign_s.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/string_s.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/wchar_s.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/securityappcontainer.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/securitybaseapi.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/servprov.h
@@ -11477,18 +11514,22 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/s
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/stringapiset.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/swprintf.inl
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/synchapi.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sys/stat.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sys/types.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/sysinfoapi.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/systemtopologyapi.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/threadpoolapiset.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/threadpoollegacyapiset.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/timezoneapi.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/tvout.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/unistd.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/unknwn.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/unknwnbase.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/urlmon.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/utilapiset.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/vadefs.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/virtdisk.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/wchar.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/winapifamily.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/winbase.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/wincon.h
@@ -11518,6 +11559,7 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/s
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/wow64apiset.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/wtypes.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/wtypesbase.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: csync/config_csync.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: src/gui/../libsync/owncloudlib.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: src/gui/ui_infofiledialog.h
 

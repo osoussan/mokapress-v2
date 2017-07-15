@@ -15,7 +15,7 @@
 #ifndef VERSION_H
 #define VERSION_H
 
-#define GIT_SHA1 "8ee2ceb8d2d149f6ecfdb7f902fdc7db52294a59"
+#define GIT_SHA1 "e076688902b74d18328a7dc3f916f114a10517f0"
 
 #define MIRALL_STRINGIFY(s) MIRALL_TOSTRING(s)
 #define MIRALL_TOSTRING(s) #s

@@ -1,6 +1,8 @@
 #include "infodirdialog.h"
 #include "ui_infodirdialog.h"
 #include "configfile.h"
+#include "theme.h"
+
 #include <QFileInfo>
 #include <QFile>
 #include <QTextStream>
@@ -72,9 +74,12 @@ InfoDirDialog::InfoDirDialog(const QString &sharePath, const QString &localPath,
     _allLanguagesCodes.push_back("nl");
 
 
-    const QString &before = QString("Mokapress");
-    const QString &after = QString("Mokapress/.config");
+    Theme   *theme = Theme::instance();
+
+    const QString &before = QString(theme->getLocalFolderName());
+    const QString &after = QString(theme->getLocalFolderName() + "/.config");
     _infoFilePath = const_cast<QString&>(localPath).replace(before, after) + QString("/info.xml");
+
     QFileInfo infoFileInfo(_infoFilePath);
     if (infoFileInfo.exists()) {
       QFile file(_infoFilePath);

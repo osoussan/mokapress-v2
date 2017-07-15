@@ -2373,6 +2373,8 @@ ui_infodirdialog.h
 /home/user/client/src/gui/ui_infodirdialog.h
 configfile.h
 /home/user/client/src/gui/configfile.h
+theme.h
+/home/user/client/src/gui/theme.h
 QFileInfo
 -
 QFile
@@ -2399,6 +2401,8 @@ infofiledialog.h
 /home/user/client/src/gui/infofiledialog.h
 ui_infofiledialog.h
 /home/user/client/src/gui/ui_infofiledialog.h
+theme.h
+/home/user/client/src/gui/theme.h
 QFileInfo
 -
 QFile

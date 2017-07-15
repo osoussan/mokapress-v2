@@ -10234,8 +10234,13 @@ src/gui/CMakeFiles/mokapress.dir/ignorelisteditor.cpp.obj
  src/gui/../libsync/owncloudlib.h
  src/gui/ui_ignorelisteditor.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj
+ /home/user/client/csync/src/csync.h
+ /home/user/client/csync/src/std/c_private.h
  /home/user/client/src/gui/../libsync/accountfwd.h
  /home/user/client/src/gui/../libsync/configfile.h
+ /home/user/client/src/gui/../libsync/syncfileitem.h
+ /home/user/client/src/gui/../libsync/syncresult.h
+ /home/user/client/src/gui/../libsync/theme.h
  /home/user/client/src/gui/infodirdialog.cpp
  /home/user/client/src/gui/infodirdialog.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/GL/gl.h
@@ -10250,6 +10255,7 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_print_pop.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_print_push.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_secapi.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_stat64.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_stdarg.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_unicode.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/_timeval.h
@@ -10275,9 +10281,11 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/errhandlingapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/errno.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/excpt.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/fcntl.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/fibersapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/fileapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/fltwinerror.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/getopt.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/guiddef.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/handleapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/heapapi.h
@@ -10286,6 +10294,7 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/interlockedapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/intrin.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/inttypes.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/io.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/ioapiset.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/jobapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/ktmtypes.h
@@ -10313,6 +10322,7 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/oleauto.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/oleidl.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/poppack.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/process.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/processenv.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/processthreadsapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/processtopologyapi.h
@@ -10331,9 +10341,12 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/pshpack2.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/pshpack4.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/pshpack8.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/pthread_unistd.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QDateTime
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QEvent
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QFile
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QFileInfo
+ /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QHash
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QList
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QMargins
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QMetaType
@@ -10351,6 +10364,7 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QStringList
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QTextStream
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QVariant
+ /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QVector
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QXmlStreamWriter
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QtCore
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QtCoreDepends
@@ -10814,10 +10828,12 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/sdkddkver.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sdks/_mingw_ddk.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sdks/_mingw_directx.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/io_s.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/stdio_s.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/stdlib_s.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/stralign_s.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/string_s.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/wchar_s.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/securityappcontainer.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/securitybaseapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/servprov.h
@@ -10834,18 +10850,22 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/stringapiset.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/swprintf.inl
  /usr/i686-w64-mingw32/sys-root/mingw/include/synchapi.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/sys/stat.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/sys/types.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sysinfoapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/systemtopologyapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/threadpoolapiset.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/threadpoollegacyapiset.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/timezoneapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/tvout.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/unistd.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/unknwn.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/unknwnbase.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/urlmon.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/utilapiset.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/vadefs.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/virtdisk.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/wchar.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/winapifamily.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/winbase.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/wincon.h
@@ -10875,11 +10895,17 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/wow64apiset.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/wtypes.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/wtypesbase.h
+ csync/config_csync.h
  src/gui/../libsync/owncloudlib.h
  src/gui/ui_infodirdialog.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj
+ /home/user/client/csync/src/csync.h
+ /home/user/client/csync/src/std/c_private.h
  /home/user/client/src/gui/../libsync/accountfwd.h
  /home/user/client/src/gui/../libsync/configfile.h
+ /home/user/client/src/gui/../libsync/syncfileitem.h
+ /home/user/client/src/gui/../libsync/syncresult.h
+ /home/user/client/src/gui/../libsync/theme.h
  /home/user/client/src/gui/infofiledialog.cpp
  /home/user/client/src/gui/infofiledialog.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/GL/gl.h
@@ -10894,6 +10920,7 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_print_pop.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_print_push.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_secapi.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_stat64.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_stdarg.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/_mingw_unicode.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/_timeval.h
@@ -10919,9 +10946,11 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/errhandlingapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/errno.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/excpt.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/fcntl.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/fibersapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/fileapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/fltwinerror.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/getopt.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/guiddef.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/handleapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/heapapi.h
@@ -10930,6 +10959,7 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/interlockedapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/intrin.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/inttypes.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/io.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/ioapiset.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/jobapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/ktmtypes.h
@@ -10957,6 +10987,7 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/oleauto.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/oleidl.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/poppack.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/process.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/processenv.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/processthreadsapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/processtopologyapi.h
@@ -10975,10 +11006,13 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/pshpack2.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/pshpack4.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/pshpack8.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/pthread_unistd.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QDateTime
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QDebug
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QEvent
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QFile
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QFileInfo
+ /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QHash
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QList
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QMargins
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QMetaType
@@ -10996,6 +11030,7 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QStringList
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QTextStream
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QVariant
+ /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QVector
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QXmlStreamWriter
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QtCore
  /usr/i686-w64-mingw32/sys-root/mingw/include/qt5/QtCore/QtCoreDepends
@@ -11458,10 +11493,12 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/sdkddkver.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sdks/_mingw_ddk.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sdks/_mingw_directx.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/io_s.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/stdio_s.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/stdlib_s.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/stralign_s.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/string_s.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/sec_api/wchar_s.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/securityappcontainer.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/securitybaseapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/servprov.h
@@ -11478,18 +11515,22 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/stringapiset.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/swprintf.inl
  /usr/i686-w64-mingw32/sys-root/mingw/include/synchapi.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/sys/stat.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/sys/types.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/sysinfoapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/systemtopologyapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/threadpoolapiset.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/threadpoollegacyapiset.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/timezoneapi.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/tvout.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/unistd.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/unknwn.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/unknwnbase.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/urlmon.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/utilapiset.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/vadefs.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/virtdisk.h
+ /usr/i686-w64-mingw32/sys-root/mingw/include/wchar.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/winapifamily.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/winbase.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/wincon.h
@@ -11519,6 +11560,7 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj
  /usr/i686-w64-mingw32/sys-root/mingw/include/wow64apiset.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/wtypes.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/wtypesbase.h
+ csync/config_csync.h
  src/gui/../libsync/owncloudlib.h
  src/gui/ui_infofiledialog.h
 src/gui/CMakeFiles/mokapress.dir/languagesettings.cpp.obj
