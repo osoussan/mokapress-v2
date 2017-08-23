@@ -8554,6 +8554,7 @@ src/gui/CMakeFiles/mokapress.dir/folderwatcher.cpp.obj
  /home/user/client/src/gui/../libsync/syncfileitem.h
  /home/user/client/src/gui/../libsync/syncjournaldb.h
  /home/user/client/src/gui/../libsync/syncresult.h
+ /home/user/client/src/gui/../libsync/theme.h
  /home/user/client/src/gui/../libsync/utility.h
  /home/user/client/src/gui/folder.h
  /home/user/client/src/gui/folderwatcher.cpp
@@ -10243,6 +10244,7 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj
  /home/user/client/src/gui/../libsync/theme.h
  /home/user/client/src/gui/infodirdialog.cpp
  /home/user/client/src/gui/infodirdialog.h
+ /home/user/client/src/gui/languagesettings.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/GL/gl.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/GLES2/gl2.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/GLES2/gl2platform.h
@@ -10908,6 +10910,7 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj
  /home/user/client/src/gui/../libsync/theme.h
  /home/user/client/src/gui/infofiledialog.cpp
  /home/user/client/src/gui/infofiledialog.h
+ /home/user/client/src/gui/languagesettings.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/GL/gl.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/GLES2/gl2.h
  /usr/i686-w64-mingw32/sys-root/mingw/include/GLES2/gl2platform.h

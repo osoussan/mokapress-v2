@@ -29,35 +29,32 @@ The CXX compiler identification is GNU, found in "/home/user/build-win32/CMakeFi
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_fa979/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_fa979.dir/build.make CMakeFiles/cmTC_fa979.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_fd283/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_fd283.dir/build.make CMakeFiles/cmTC_fd283.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_fa979.dir/progress.make' has modification time 0.023 s in the future
-Building C object CMakeFiles/cmTC_fa979.dir/testCCompiler.c.obj
-/usr/bin/i686-w64-mingw32-gcc    -o CMakeFiles/cmTC_fa979.dir/testCCompiler.c.obj   -c /home/user/build-win32/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_fa979.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa979.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_fa979.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_fa979.dir/objects.a @CMakeFiles/cmTC_fa979.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-gcc      -Wl,--whole-archive CMakeFiles/cmTC_fa979.dir/objects.a -Wl,--no-whole-archive  -o cmTC_fa979.exe -Wl,--out-implib,libcmTC_fa979.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_fa979.dir/linklibs.rsp
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building C object CMakeFiles/cmTC_fd283.dir/testCCompiler.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -o CMakeFiles/cmTC_fd283.dir/testCCompiler.c.obj   -c /home/user/build-win32/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_fd283.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd283.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_fd283.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_fd283.dir/objects.a @CMakeFiles/cmTC_fd283.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc      -Wl,--whole-archive CMakeFiles/cmTC_fd283.dir/objects.a -Wl,--no-whole-archive  -o cmTC_fd283.exe -Wl,--out-implib,libcmTC_fd283.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_fd283.dir/linklibs.rsp
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_39c09/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_39c09.dir/build.make CMakeFiles/cmTC_39c09.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_59c42/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_59c42.dir/build.make CMakeFiles/cmTC_59c42.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_39c09.dir/progress.make' has modification time 0.023 s in the future
-Building C object CMakeFiles/cmTC_39c09.dir/CMakeCCompilerABI.c.obj
-/usr/bin/i686-w64-mingw32-gcc    -o CMakeFiles/cmTC_39c09.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_39c09.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39c09.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_39c09.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_39c09.dir/objects.a @CMakeFiles/cmTC_39c09.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-gcc     -v -Wl,--whole-archive CMakeFiles/cmTC_39c09.dir/objects.a -Wl,--no-whole-archive  -o cmTC_39c09.exe -Wl,--out-implib,libcmTC_39c09.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Building C object CMakeFiles/cmTC_59c42.dir/CMakeCCompilerABI.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -o CMakeFiles/cmTC_59c42.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_59c42.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59c42.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_59c42.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_59c42.dir/objects.a @CMakeFiles/cmTC_59c42.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc     -v -Wl,--whole-archive CMakeFiles/cmTC_59c42.dir/objects.a -Wl,--no-whole-archive  -o cmTC_59c42.exe -Wl,--out-implib,libcmTC_59c42.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/i686-w64-mingw32-gcc
 COLLECT_LTO_WRAPPER=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper
@@ -67,9 +64,8 @@ Thread model: win32
 gcc version 4.9.2 (GCC) 
 COMPILER_PATH=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/
 LIBRARY_PATH=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/:/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/:/usr/i686-w64-mingw32/sys-root/mingw/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_39c09.exe' '-mtune=generic' '-march=pentiumpro'
- /usr/lib64/gcc/i686-w64-mingw32/4.9.2/collect2 -plugin /usr/lib64/gcc/i686-w64-mingw32/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKoYOfx.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=/usr/i686-w64-mingw32/sys-root --build-id -m i386pe -Bdynamic -o cmTC_39c09.exe /usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/crt2.o /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2 -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib --whole-archive CMakeFiles/cmTC_39c09.dir/objects.a --no-whole-archive --out-implib libcmTC_39c09.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtend.o
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_59c42.exe' '-mtune=generic' '-march=pentiumpro'
+ /usr/lib64/gcc/i686-w64-mingw32/4.9.2/collect2 -plugin /usr/lib64/gcc/i686-w64-mingw32/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/ccs6uAl2.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=/usr/i686-w64-mingw32/sys-root --build-id -m i386pe -Bdynamic -o cmTC_59c42.exe /usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/crt2.o /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2 -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib --whole-archive CMakeFiles/cmTC_59c42.dir/objects.a --no-whole-archive --out-implib libcmTC_59c42.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtend.o
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 
@@ -77,17 +73,16 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-w64-mingw32-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_39c09/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_39c09.dir/build.make CMakeFiles/cmTC_39c09.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_59c42/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_59c42.dir/build.make CMakeFiles/cmTC_59c42.dir/build]
   ignore line: [gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp']
-  ignore line: [gmake[1]: Warning: File 'CMakeFiles/cmTC_39c09.dir/progress.make' has modification time 0.023 s in the future]
-  ignore line: [Building C object CMakeFiles/cmTC_39c09.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/usr/bin/i686-w64-mingw32-gcc    -o CMakeFiles/cmTC_39c09.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_39c09.exe]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39c09.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cmake -E remove -f CMakeFiles/cmTC_39c09.dir/objects.a]
-  ignore line: [/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_39c09.dir/objects.a @CMakeFiles/cmTC_39c09.dir/objects1.rsp]
-  ignore line: [/usr/bin/i686-w64-mingw32-gcc     -v -Wl,--whole-archive CMakeFiles/cmTC_39c09.dir/objects.a -Wl,--no-whole-archive  -o cmTC_39c09.exe -Wl,--out-implib,libcmTC_39c09.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Building C object CMakeFiles/cmTC_59c42.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/usr/bin/i686-w64-mingw32-gcc    -o CMakeFiles/cmTC_59c42.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_59c42.exe]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59c42.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cmake -E remove -f CMakeFiles/cmTC_59c42.dir/objects.a]
+  ignore line: [/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_59c42.dir/objects.a @CMakeFiles/cmTC_59c42.dir/objects1.rsp]
+  ignore line: [/usr/bin/i686-w64-mingw32-gcc     -v -Wl,--whole-archive CMakeFiles/cmTC_59c42.dir/objects.a -Wl,--no-whole-archive  -o cmTC_59c42.exe -Wl,--out-implib,libcmTC_59c42.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/i686-w64-mingw32-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper]
@@ -97,13 +92,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.9.2 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/:/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/:/usr/i686-w64-mingw32/sys-root/mingw/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_39c09.exe' '-mtune=generic' '-march=pentiumpro']
-  link line: [ /usr/lib64/gcc/i686-w64-mingw32/4.9.2/collect2 -plugin /usr/lib64/gcc/i686-w64-mingw32/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKoYOfx.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=/usr/i686-w64-mingw32/sys-root --build-id -m i386pe -Bdynamic -o cmTC_39c09.exe /usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/crt2.o /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2 -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib --whole-archive CMakeFiles/cmTC_39c09.dir/objects.a --no-whole-archive --out-implib libcmTC_39c09.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_59c42.exe' '-mtune=generic' '-march=pentiumpro']
+  link line: [ /usr/lib64/gcc/i686-w64-mingw32/4.9.2/collect2 -plugin /usr/lib64/gcc/i686-w64-mingw32/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/ccs6uAl2.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=/usr/i686-w64-mingw32/sys-root --build-id -m i386pe -Bdynamic -o cmTC_59c42.exe /usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/crt2.o /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2 -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib --whole-archive CMakeFiles/cmTC_59c42.dir/objects.a --no-whole-archive --out-implib libcmTC_59c42.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtend.o]
     arg [/usr/lib64/gcc/i686-w64-mingw32/4.9.2/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib64/gcc/i686-w64-mingw32/4.9.2/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccKoYOfx.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccs6uAl2.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -126,7 +121,7 @@ Parsed C implicit link information from above output:
     arg [i386pe] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_39c09.exe] ==> ignore
+    arg [cmTC_59c42.exe] ==> ignore
     arg [/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/crt2.o] ==> ignore
     arg [/usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtbegin.o] ==> ignore
     arg [-L/usr/lib64/gcc/i686-w64-mingw32/4.9.2] ==> dir [/usr/lib64/gcc/i686-w64-mingw32/4.9.2]
@@ -135,10 +130,10 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib] ==> dir [/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib]
     arg [-L/usr/i686-w64-mingw32/sys-root/mingw/lib] ==> dir [/usr/i686-w64-mingw32/sys-root/mingw/lib]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles/cmTC_39c09.dir/objects.a] ==> ignore
+    arg [CMakeFiles/cmTC_59c42.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_39c09.dll.a] ==> ignore
+    arg [libcmTC_59c42.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -179,18 +174,16 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_d1715/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_d1715.dir/build.make CMakeFiles/cmTC_d1715.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_1caf3/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_1caf3.dir/build.make CMakeFiles/cmTC_1caf3.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_d1715.dir/progress.make' has modification time 0.026 s in the future
-Building C object CMakeFiles/cmTC_d1715.dir/feature_tests.c.obj
-/usr/bin/i686-w64-mingw32-gcc   -std=c11 -o CMakeFiles/cmTC_d1715.dir/feature_tests.c.obj   -c /home/user/build-win32/CMakeFiles/feature_tests.c
-Linking C executable cmTC_d1715.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1715.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_d1715.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_d1715.dir/objects.a @CMakeFiles/cmTC_d1715.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-gcc      -Wl,--whole-archive CMakeFiles/cmTC_d1715.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d1715.exe -Wl,--out-implib,libcmTC_d1715.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_d1715.dir/linklibs.rsp
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building C object CMakeFiles/cmTC_1caf3.dir/feature_tests.c.obj
+/usr/bin/i686-w64-mingw32-gcc   -std=c11 -o CMakeFiles/cmTC_1caf3.dir/feature_tests.c.obj   -c /home/user/build-win32/CMakeFiles/feature_tests.c
+Linking C executable cmTC_1caf3.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1caf3.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_1caf3.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_1caf3.dir/objects.a @CMakeFiles/cmTC_1caf3.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc      -Wl,--whole-archive CMakeFiles/cmTC_1caf3.dir/objects.a -Wl,--no-whole-archive  -o cmTC_1caf3.exe -Wl,--out-implib,libcmTC_1caf3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_1caf3.dir/linklibs.rsp
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 
@@ -203,18 +196,16 @@ gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_f2f8a/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_f2f8a.dir/build.make CMakeFiles/cmTC_f2f8a.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_4e60a/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_4e60a.dir/build.make CMakeFiles/cmTC_4e60a.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_f2f8a.dir/progress.make' has modification time 0.021 s in the future
-Building C object CMakeFiles/cmTC_f2f8a.dir/feature_tests.c.obj
-/usr/bin/i686-w64-mingw32-gcc   -std=c99 -o CMakeFiles/cmTC_f2f8a.dir/feature_tests.c.obj   -c /home/user/build-win32/CMakeFiles/feature_tests.c
-Linking C executable cmTC_f2f8a.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2f8a.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_f2f8a.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_f2f8a.dir/objects.a @CMakeFiles/cmTC_f2f8a.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-gcc      -Wl,--whole-archive CMakeFiles/cmTC_f2f8a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f2f8a.exe -Wl,--out-implib,libcmTC_f2f8a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_f2f8a.dir/linklibs.rsp
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building C object CMakeFiles/cmTC_4e60a.dir/feature_tests.c.obj
+/usr/bin/i686-w64-mingw32-gcc   -std=c99 -o CMakeFiles/cmTC_4e60a.dir/feature_tests.c.obj   -c /home/user/build-win32/CMakeFiles/feature_tests.c
+Linking C executable cmTC_4e60a.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e60a.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_4e60a.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_4e60a.dir/objects.a @CMakeFiles/cmTC_4e60a.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc      -Wl,--whole-archive CMakeFiles/cmTC_4e60a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_4e60a.exe -Wl,--out-implib,libcmTC_4e60a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_4e60a.dir/linklibs.rsp
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 
@@ -227,18 +218,16 @@ gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_2b164/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_2b164.dir/build.make CMakeFiles/cmTC_2b164.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_78284/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_78284.dir/build.make CMakeFiles/cmTC_78284.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_2b164.dir/progress.make' has modification time 0.017 s in the future
-Building C object CMakeFiles/cmTC_2b164.dir/feature_tests.c.obj
-/usr/bin/i686-w64-mingw32-gcc   -std=c90 -o CMakeFiles/cmTC_2b164.dir/feature_tests.c.obj   -c /home/user/build-win32/CMakeFiles/feature_tests.c
-Linking C executable cmTC_2b164.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b164.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_2b164.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_2b164.dir/objects.a @CMakeFiles/cmTC_2b164.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-gcc      -Wl,--whole-archive CMakeFiles/cmTC_2b164.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2b164.exe -Wl,--out-implib,libcmTC_2b164.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_2b164.dir/linklibs.rsp
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building C object CMakeFiles/cmTC_78284.dir/feature_tests.c.obj
+/usr/bin/i686-w64-mingw32-gcc   -std=c90 -o CMakeFiles/cmTC_78284.dir/feature_tests.c.obj   -c /home/user/build-win32/CMakeFiles/feature_tests.c
+Linking C executable cmTC_78284.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78284.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_78284.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_78284.dir/objects.a @CMakeFiles/cmTC_78284.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc      -Wl,--whole-archive CMakeFiles/cmTC_78284.dir/objects.a -Wl,--no-whole-archive  -o cmTC_78284.exe -Wl,--out-implib,libcmTC_78284.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_78284.dir/linklibs.rsp
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 
@@ -249,35 +238,32 @@ gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_15339/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_15339.dir/build.make CMakeFiles/cmTC_15339.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_60ca3/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_60ca3.dir/build.make CMakeFiles/cmTC_60ca3.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_15339.dir/progress.make' has modification time 0.019 s in the future
-Building CXX object CMakeFiles/cmTC_15339.dir/testCXXCompiler.cxx.obj
-/usr/bin/i686-w64-mingw32-g++     -o CMakeFiles/cmTC_15339.dir/testCXXCompiler.cxx.obj -c /home/user/build-win32/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_15339.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15339.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_15339.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_15339.dir/objects.a @CMakeFiles/cmTC_15339.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-g++      -Wl,--whole-archive CMakeFiles/cmTC_15339.dir/objects.a -Wl,--no-whole-archive  -o cmTC_15339.exe -Wl,--out-implib,libcmTC_15339.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_15339.dir/linklibs.rsp
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building CXX object CMakeFiles/cmTC_60ca3.dir/testCXXCompiler.cxx.obj
+/usr/bin/i686-w64-mingw32-g++     -o CMakeFiles/cmTC_60ca3.dir/testCXXCompiler.cxx.obj -c /home/user/build-win32/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_60ca3.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60ca3.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_60ca3.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_60ca3.dir/objects.a @CMakeFiles/cmTC_60ca3.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++      -Wl,--whole-archive CMakeFiles/cmTC_60ca3.dir/objects.a -Wl,--no-whole-archive  -o cmTC_60ca3.exe -Wl,--out-implib,libcmTC_60ca3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_60ca3.dir/linklibs.rsp
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_e458e/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_e458e.dir/build.make CMakeFiles/cmTC_e458e.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_4023f/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_4023f.dir/build.make CMakeFiles/cmTC_4023f.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_e458e.dir/progress.make' has modification time 0.021 s in the future
-Building CXX object CMakeFiles/cmTC_e458e.dir/CMakeCXXCompilerABI.cpp.obj
-/usr/bin/i686-w64-mingw32-g++     -o CMakeFiles/cmTC_e458e.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_e458e.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e458e.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_e458e.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_e458e.dir/objects.a @CMakeFiles/cmTC_e458e.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-g++     -v -Wl,--whole-archive CMakeFiles/cmTC_e458e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e458e.exe -Wl,--out-implib,libcmTC_e458e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Building CXX object CMakeFiles/cmTC_4023f.dir/CMakeCXXCompilerABI.cpp.obj
+/usr/bin/i686-w64-mingw32-g++     -o CMakeFiles/cmTC_4023f.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_4023f.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4023f.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_4023f.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_4023f.dir/objects.a @CMakeFiles/cmTC_4023f.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++     -v -Wl,--whole-archive CMakeFiles/cmTC_4023f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_4023f.exe -Wl,--out-implib,libcmTC_4023f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/i686-w64-mingw32-g++
 COLLECT_LTO_WRAPPER=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper
@@ -287,9 +273,8 @@ Thread model: win32
 gcc version 4.9.2 (GCC) 
 COMPILER_PATH=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/
 LIBRARY_PATH=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/:/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/:/usr/i686-w64-mingw32/sys-root/mingw/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e458e.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro'
- /usr/lib64/gcc/i686-w64-mingw32/4.9.2/collect2 -plugin /usr/lib64/gcc/i686-w64-mingw32/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3qCKTo.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=/usr/i686-w64-mingw32/sys-root --build-id -m i386pe -Bdynamic -o cmTC_e458e.exe /usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/crt2.o /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2 -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib --whole-archive CMakeFiles/cmTC_e458e.dir/objects.a --no-whole-archive --out-implib libcmTC_e458e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtend.o
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4023f.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro'
+ /usr/lib64/gcc/i686-w64-mingw32/4.9.2/collect2 -plugin /usr/lib64/gcc/i686-w64-mingw32/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRMaK6v.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=/usr/i686-w64-mingw32/sys-root --build-id -m i386pe -Bdynamic -o cmTC_4023f.exe /usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/crt2.o /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2 -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib --whole-archive CMakeFiles/cmTC_4023f.dir/objects.a --no-whole-archive --out-implib libcmTC_4023f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtend.o
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 
@@ -297,17 +282,16 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(i686-w64-mingw32-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_e458e/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_e458e.dir/build.make CMakeFiles/cmTC_e458e.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_4023f/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_4023f.dir/build.make CMakeFiles/cmTC_4023f.dir/build]
   ignore line: [gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp']
-  ignore line: [gmake[1]: Warning: File 'CMakeFiles/cmTC_e458e.dir/progress.make' has modification time 0.021 s in the future]
-  ignore line: [Building CXX object CMakeFiles/cmTC_e458e.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [/usr/bin/i686-w64-mingw32-g++     -o CMakeFiles/cmTC_e458e.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_e458e.exe]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e458e.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cmake -E remove -f CMakeFiles/cmTC_e458e.dir/objects.a]
-  ignore line: [/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_e458e.dir/objects.a @CMakeFiles/cmTC_e458e.dir/objects1.rsp]
-  ignore line: [/usr/bin/i686-w64-mingw32-g++     -v -Wl,--whole-archive CMakeFiles/cmTC_e458e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e458e.exe -Wl,--out-implib,libcmTC_e458e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_4023f.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/usr/bin/i686-w64-mingw32-g++     -o CMakeFiles/cmTC_4023f.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_4023f.exe]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4023f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cmake -E remove -f CMakeFiles/cmTC_4023f.dir/objects.a]
+  ignore line: [/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_4023f.dir/objects.a @CMakeFiles/cmTC_4023f.dir/objects1.rsp]
+  ignore line: [/usr/bin/i686-w64-mingw32-g++     -v -Wl,--whole-archive CMakeFiles/cmTC_4023f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_4023f.exe -Wl,--out-implib,libcmTC_4023f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/i686-w64-mingw32-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper]
@@ -317,13 +301,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.9.2 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib/:/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/:/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/:/usr/i686-w64-mingw32/sys-root/mingw/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e458e.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro']
-  link line: [ /usr/lib64/gcc/i686-w64-mingw32/4.9.2/collect2 -plugin /usr/lib64/gcc/i686-w64-mingw32/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3qCKTo.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=/usr/i686-w64-mingw32/sys-root --build-id -m i386pe -Bdynamic -o cmTC_e458e.exe /usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/crt2.o /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2 -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib --whole-archive CMakeFiles/cmTC_e458e.dir/objects.a --no-whole-archive --out-implib libcmTC_e458e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4023f.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro']
+  link line: [ /usr/lib64/gcc/i686-w64-mingw32/4.9.2/collect2 -plugin /usr/lib64/gcc/i686-w64-mingw32/4.9.2/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRMaK6v.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=/usr/i686-w64-mingw32/sys-root --build-id -m i386pe -Bdynamic -o cmTC_4023f.exe /usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/crt2.o /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtbegin.o -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2 -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib/../lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib -L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib -L/usr/i686-w64-mingw32/sys-root/mingw/lib --whole-archive CMakeFiles/cmTC_4023f.dir/objects.a --no-whole-archive --out-implib libcmTC_4023f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt /usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtend.o]
     arg [/usr/lib64/gcc/i686-w64-mingw32/4.9.2/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib64/gcc/i686-w64-mingw32/4.9.2/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib64/gcc/i686-w64-mingw32/4.9.2/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc3qCKTo.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccRMaK6v.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -346,7 +330,7 @@ Parsed CXX implicit link information from above output:
     arg [i386pe] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_e458e.exe] ==> ignore
+    arg [cmTC_4023f.exe] ==> ignore
     arg [/usr/i686-w64-mingw32/sys-root/mingw/lib/../lib/crt2.o] ==> ignore
     arg [/usr/lib64/gcc/i686-w64-mingw32/4.9.2/crtbegin.o] ==> ignore
     arg [-L/usr/lib64/gcc/i686-w64-mingw32/4.9.2] ==> dir [/usr/lib64/gcc/i686-w64-mingw32/4.9.2]
@@ -355,10 +339,10 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib] ==> dir [/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/lib]
     arg [-L/usr/i686-w64-mingw32/sys-root/mingw/lib] ==> dir [/usr/i686-w64-mingw32/sys-root/mingw/lib]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles/cmTC_e458e.dir/objects.a] ==> ignore
+    arg [CMakeFiles/cmTC_4023f.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_e458e.dll.a] ==> ignore
+    arg [libcmTC_4023f.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -400,18 +384,16 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_eca22/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_eca22.dir/build.make CMakeFiles/cmTC_eca22.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_f18ea/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_f18ea.dir/build.make CMakeFiles/cmTC_f18ea.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_eca22.dir/progress.make' has modification time 0.017 s in the future
-Building CXX object CMakeFiles/cmTC_eca22.dir/feature_tests.cxx.obj
-/usr/bin/i686-w64-mingw32-g++    -std=c++14 -o CMakeFiles/cmTC_eca22.dir/feature_tests.cxx.obj -c /home/user/build-win32/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_eca22.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eca22.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_eca22.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_eca22.dir/objects.a @CMakeFiles/cmTC_eca22.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-g++      -Wl,--whole-archive CMakeFiles/cmTC_eca22.dir/objects.a -Wl,--no-whole-archive  -o cmTC_eca22.exe -Wl,--out-implib,libcmTC_eca22.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_eca22.dir/linklibs.rsp
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building CXX object CMakeFiles/cmTC_f18ea.dir/feature_tests.cxx.obj
+/usr/bin/i686-w64-mingw32-g++    -std=c++14 -o CMakeFiles/cmTC_f18ea.dir/feature_tests.cxx.obj -c /home/user/build-win32/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_f18ea.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f18ea.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_f18ea.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_f18ea.dir/objects.a @CMakeFiles/cmTC_f18ea.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++      -Wl,--whole-archive CMakeFiles/cmTC_f18ea.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f18ea.exe -Wl,--out-implib,libcmTC_f18ea.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_f18ea.dir/linklibs.rsp
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 
@@ -477,18 +459,16 @@ gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_2b41c/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_2b41c.dir/build.make CMakeFiles/cmTC_2b41c.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_cc699/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_cc699.dir/build.make CMakeFiles/cmTC_cc699.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_2b41c.dir/progress.make' has modification time 0.0007 s in the future
-Building CXX object CMakeFiles/cmTC_2b41c.dir/feature_tests.cxx.obj
-/usr/bin/i686-w64-mingw32-g++    -std=c++11 -o CMakeFiles/cmTC_2b41c.dir/feature_tests.cxx.obj -c /home/user/build-win32/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_2b41c.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b41c.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_2b41c.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_2b41c.dir/objects.a @CMakeFiles/cmTC_2b41c.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-g++      -Wl,--whole-archive CMakeFiles/cmTC_2b41c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2b41c.exe -Wl,--out-implib,libcmTC_2b41c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_2b41c.dir/linklibs.rsp
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building CXX object CMakeFiles/cmTC_cc699.dir/feature_tests.cxx.obj
+/usr/bin/i686-w64-mingw32-g++    -std=c++11 -o CMakeFiles/cmTC_cc699.dir/feature_tests.cxx.obj -c /home/user/build-win32/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_cc699.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc699.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_cc699.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_cc699.dir/objects.a @CMakeFiles/cmTC_cc699.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++      -Wl,--whole-archive CMakeFiles/cmTC_cc699.dir/objects.a -Wl,--no-whole-archive  -o cmTC_cc699.exe -Wl,--out-implib,libcmTC_cc699.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_cc699.dir/linklibs.rsp
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 
@@ -554,18 +534,16 @@ gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_b7971/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_b7971.dir/build.make CMakeFiles/cmTC_b7971.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_2c142/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_2c142.dir/build.make CMakeFiles/cmTC_2c142.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_b7971.dir/progress.make' has modification time 0.02 s in the future
-Building CXX object CMakeFiles/cmTC_b7971.dir/feature_tests.cxx.obj
-/usr/bin/i686-w64-mingw32-g++    -std=c++98 -o CMakeFiles/cmTC_b7971.dir/feature_tests.cxx.obj -c /home/user/build-win32/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_b7971.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7971.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_b7971.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_b7971.dir/objects.a @CMakeFiles/cmTC_b7971.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-g++      -Wl,--whole-archive CMakeFiles/cmTC_b7971.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b7971.exe -Wl,--out-implib,libcmTC_b7971.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_b7971.dir/linklibs.rsp
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building CXX object CMakeFiles/cmTC_2c142.dir/feature_tests.cxx.obj
+/usr/bin/i686-w64-mingw32-g++    -std=c++98 -o CMakeFiles/cmTC_2c142.dir/feature_tests.cxx.obj -c /home/user/build-win32/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_2c142.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c142.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_2c142.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_2c142.dir/objects.a @CMakeFiles/cmTC_2c142.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++      -Wl,--whole-archive CMakeFiles/cmTC_2c142.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2c142.exe -Wl,--out-implib,libcmTC_2c142.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_2c142.dir/linklibs.rsp
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 
@@ -629,21 +607,19 @@ gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 Performing C SOURCE FILE Test WITH_FPIC succeeded with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_e267e/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_e267e.dir/build.make CMakeFiles/cmTC_e267e.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_b8dc2/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b8dc2.dir/build.make CMakeFiles/cmTC_b8dc2.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_e267e.dir/progress.make' has modification time 0.021 s in the future
-Building C object CMakeFiles/cmTC_e267e.dir/src.c.obj
-/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -DWITH_FPIC   -fPIC -o CMakeFiles/cmTC_e267e.dir/src.c.obj   -c /home/user/build-win32/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_b8dc2.dir/src.c.obj
+/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -DWITH_FPIC   -fPIC -o CMakeFiles/cmTC_b8dc2.dir/src.c.obj   -c /home/user/build-win32/CMakeFiles/CMakeTmp/src.c
 /home/user/build-win32/CMakeFiles/CMakeTmp/src.c:1:0: warning: -fPIC ignored for target (all code is position independent)
  int main(void) { return 0; }
  ^
-Linking C executable cmTC_e267e.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e267e.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_e267e.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_e267e.dir/objects.a @CMakeFiles/cmTC_e267e.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-gcc  -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -DWITH_FPIC    -Wl,--whole-archive CMakeFiles/cmTC_e267e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e267e.exe -Wl,--out-implib,libcmTC_e267e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_e267e.dir/linklibs.rsp
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Linking C executable cmTC_b8dc2.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8dc2.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_b8dc2.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_b8dc2.dir/objects.a @CMakeFiles/cmTC_b8dc2.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc  -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -DWITH_FPIC    -Wl,--whole-archive CMakeFiles/cmTC_b8dc2.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b8dc2.exe -Wl,--out-implib,libcmTC_b8dc2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_b8dc2.dir/linklibs.rsp
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 Source file was:
@@ -651,48 +627,43 @@ int main(void) { return 0; }
 Determining if the function asprintf exists passed with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_5afc2/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_5afc2.dir/build.make CMakeFiles/cmTC_5afc2.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_f2ec4/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_f2ec4.dir/build.make CMakeFiles/cmTC_f2ec4.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_5afc2.dir/progress.make' has modification time 0.017 s in the future
-Building C object CMakeFiles/cmTC_5afc2.dir/CheckFunctionExists.c.obj
-/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=asprintf   -o CMakeFiles/cmTC_5afc2.dir/CheckFunctionExists.c.obj   -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_5afc2.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5afc2.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_5afc2.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_5afc2.dir/objects.a @CMakeFiles/cmTC_5afc2.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-gcc  -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=asprintf    -Wl,--whole-archive CMakeFiles/cmTC_5afc2.dir/objects.a -Wl,--no-whole-archive  -o cmTC_5afc2.exe -Wl,--out-implib,libcmTC_5afc2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_5afc2.dir/linklibs.rsp
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building C object CMakeFiles/cmTC_f2ec4.dir/CheckFunctionExists.c.obj
+/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=asprintf   -o CMakeFiles/cmTC_f2ec4.dir/CheckFunctionExists.c.obj   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f2ec4.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2ec4.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_f2ec4.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_f2ec4.dir/objects.a @CMakeFiles/cmTC_f2ec4.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc  -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=asprintf    -Wl,--whole-archive CMakeFiles/cmTC_f2ec4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f2ec4.exe -Wl,--out-implib,libcmTC_f2ec4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_f2ec4.dir/linklibs.rsp
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 
 Determining if the function __mingw_asprintf exists passed with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_84c07/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_84c07.dir/build.make CMakeFiles/cmTC_84c07.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_3672e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_3672e.dir/build.make CMakeFiles/cmTC_3672e.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_84c07.dir/progress.make' has modification time 0.022 s in the future
-Building C object CMakeFiles/cmTC_84c07.dir/CheckFunctionExists.c.obj
-/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=__mingw_asprintf   -o CMakeFiles/cmTC_84c07.dir/CheckFunctionExists.c.obj   -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_84c07.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84c07.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_84c07.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_84c07.dir/objects.a @CMakeFiles/cmTC_84c07.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-gcc  -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=__mingw_asprintf    -Wl,--whole-archive CMakeFiles/cmTC_84c07.dir/objects.a -Wl,--no-whole-archive  -o cmTC_84c07.exe -Wl,--out-implib,libcmTC_84c07.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_84c07.dir/linklibs.rsp
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Building C object CMakeFiles/cmTC_3672e.dir/CheckFunctionExists.c.obj
+/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=__mingw_asprintf   -o CMakeFiles/cmTC_3672e.dir/CheckFunctionExists.c.obj   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3672e.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3672e.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_3672e.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_3672e.dir/objects.a @CMakeFiles/cmTC_3672e.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc  -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=__mingw_asprintf    -Wl,--whole-archive CMakeFiles/cmTC_3672e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3672e.exe -Wl,--out-implib,libcmTC_3672e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_3672e.dir/linklibs.rsp
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 
 Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR succeeded with the following output:
 Change Dir: /home/user/build-win32/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_c06fe/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_c06fe.dir/build.make CMakeFiles/cmTC_c06fe.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_61509/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_61509.dir/build.make CMakeFiles/cmTC_61509.dir/build
 gmake[1]: Entering directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
-gmake[1]: Warning: File 'CMakeFiles/cmTC_c06fe.dir/progress.make' has modification time 0.019 s in the future
-Building CXX object CMakeFiles/cmTC_c06fe.dir/src.cxx.obj
-/usr/bin/i686-w64-mingw32-g++    -Wall -Wextra -pedantic -Wno-long-long -std=c++0x -Wpedantic -DCOMPILER_HAS_DEPRECATED_ATTR   -o CMakeFiles/cmTC_c06fe.dir/src.cxx.obj -c /home/user/build-win32/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_61509.dir/src.cxx.obj
+/usr/bin/i686-w64-mingw32-g++    -Wall -Wextra -pedantic -Wno-long-long -std=c++0x -Wpedantic -DCOMPILER_HAS_DEPRECATED_ATTR   -o CMakeFiles/cmTC_61509.dir/src.cxx.obj -c /home/user/build-win32/CMakeFiles/CMakeTmp/src.cxx
 /home/user/build-win32/CMakeFiles/CMakeTmp/src.cxx: In function 'int main()':
 /home/user/build-win32/CMakeFiles/CMakeTmp/src.cxx:2:25: warning: 'int somefunc()' is deprecated (declared at /home/user/build-win32/CMakeFiles/CMakeTmp/src.cxx:1) [-Wdeprecated-declarations]
      int main() { return somefunc();}
@@ -700,12 +671,11 @@ Building CXX object CMakeFiles/cmTC_c06fe.dir/src.cxx.obj
 /home/user/build-win32/CMakeFiles/CMakeTmp/src.cxx:2:34: warning: 'int somefunc()' is deprecated (declared at /home/user/build-win32/CMakeFiles/CMakeTmp/src.cxx:1) [-Wdeprecated-declarations]
      int main() { return somefunc();}
                                   ^
-Linking CXX executable cmTC_c06fe.exe
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c06fe.dir/link.txt --verbose=1
-/usr/bin/cmake -E remove -f CMakeFiles/cmTC_c06fe.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_c06fe.dir/objects.a @CMakeFiles/cmTC_c06fe.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-g++  -Wall -Wextra -pedantic -Wno-long-long -std=c++0x -Wpedantic -DCOMPILER_HAS_DEPRECATED_ATTR    -Wl,--whole-archive CMakeFiles/cmTC_c06fe.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c06fe.exe -Wl,--out-implib,libcmTC_c06fe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_c06fe.dir/linklibs.rsp
-gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Linking CXX executable cmTC_61509.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61509.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_61509.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_61509.dir/objects.a @CMakeFiles/cmTC_61509.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++  -Wall -Wextra -pedantic -Wno-long-long -std=c++0x -Wpedantic -DCOMPILER_HAS_DEPRECATED_ATTR    -Wl,--whole-archive CMakeFiles/cmTC_61509.dir/objects.a -Wl,--no-whole-archive  -o cmTC_61509.exe -Wl,--out-implib,libcmTC_61509.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_61509.dir/linklibs.rsp
 gmake[1]: Leaving directory '/home/user/build-win32/CMakeFiles/CMakeTmp'
 
 Source file was:

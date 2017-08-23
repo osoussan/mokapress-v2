@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="mokapress_v2" targetName="mokapress_v2" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ee30fc8-7921-4f47-b2de-2faa9c8b6dcd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/CMakeFiles/3.8.1/CMakeDetermineCompilerABI_C.bin" afterPath="$PROJECT_DIR$/build-win32/CMakeFiles/3.8.1/CMakeDetermineCompilerABI_C.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/CMakeFiles/3.8.1/CMakeDetermineCompilerABI_CXX.bin" afterPath="$PROJECT_DIR$/build-win32/CMakeFiles/3.8.1/CMakeDetermineCompilerABI_CXX.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/CMakeFiles/3.8.1/CompilerIdC/a.exe" afterPath="$PROJECT_DIR$/build-win32/CMakeFiles/3.8.1/CompilerIdC/a.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/CMakeFiles/3.8.1/CompilerIdCXX/a.exe" afterPath="$PROJECT_DIR$/build-win32/CMakeFiles/3.8.1/CompilerIdCXX/a.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/build-win32/CMakeFiles/feature_tests.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/Mokapress-2.2.3.0-setup.exe" afterPath="$PROJECT_DIR$/build-win32/Mokapress-2.2.3.0-setup.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup.exe" afterPath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup/bin/libmokapresssync.dll" afterPath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup/bin/libmokapresssync.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup/bin/mokapress.exe" afterPath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup/bin/mokapress.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup/bin/mokapresscmd.exe" afterPath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup/bin/mokapresscmd.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup/lib/libmokapresssync.dll.a" afterPath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup/lib/libmokapresssync.dll.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup/lib/mokapress/libocsync.dll.a" afterPath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup/lib/mokapress/libocsync.dll.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup/mokapress/libocsync.dll" afterPath="$PROJECT_DIR$/build-win32/_CPack_Packages/unused/NSIS/Mokapress-2.2.3.0-setup/mokapress/libocsync.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/bin/libmokapresssync.dll" afterPath="$PROJECT_DIR$/build-win32/bin/libmokapresssync.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/bin/libocsync.dll" afterPath="$PROJECT_DIR$/build-win32/bin/libocsync.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/bin/mokapress.exe" afterPath="$PROJECT_DIR$/build-win32/bin/mokapress.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/bin/mokapresscmd.exe" afterPath="$PROJECT_DIR$/build-win32/bin/mokapresscmd.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/csync/src/CMakeFiles/ocsync.dir/objects.a" afterPath="$PROJECT_DIR$/build-win32/csync/src/CMakeFiles/ocsync.dir/objects.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/csync/src/libocsync.dll.a" afterPath="$PROJECT_DIR$/build-win32/csync/src/libocsync.dll.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/csync/src/std/libcstdlib.a" afterPath="$PROJECT_DIR$/build-win32/csync/src/std/libcstdlib.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/cmd/CMakeFiles/mokapresscmd.dir/objects.a" afterPath="$PROJECT_DIR$/build-win32/src/cmd/CMakeFiles/mokapresscmd.dir/objects.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/folderman.cpp.obj" afterPath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/folderman.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/folderwatcher.cpp.obj" afterPath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/folderwatcher.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj" afterPath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj" afterPath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/languagesettings.cpp.obj" afterPath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/languagesettings.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/objects.a" afterPath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/objects.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/socketapi.cpp.obj" afterPath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/socketapi.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/gui/libupdater.a" afterPath="$PROJECT_DIR$/build-win32/src/gui/libupdater.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/libsync/CMakeFiles/mokapresssync.dir/filesystem.cpp.obj" afterPath="$PROJECT_DIR$/build-win32/src/libsync/CMakeFiles/mokapresssync.dir/filesystem.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/libsync/CMakeFiles/mokapresssync.dir/objects.a" afterPath="$PROJECT_DIR$/build-win32/src/libsync/CMakeFiles/mokapresssync.dir/objects.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/libsync/CMakeFiles/mokapresssync.dir/theme.cpp.obj" afterPath="$PROJECT_DIR$/build-win32/src/libsync/CMakeFiles/mokapresssync.dir/theme.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/libsync/libmokapresssync.dll.a" afterPath="$PROJECT_DIR$/build-win32/src/libsync/libmokapresssync.dll.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/vcredist_x64.exe" afterPath="$PROJECT_DIR$/build-win32/vcredist_x64.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/vcredist_x86.exe" afterPath="$PROJECT_DIR$/build-win32/vcredist_x86.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/CMakeFiles/CMakeError.log" afterPath="$PROJECT_DIR$/build-win32/CMakeFiles/CMakeError.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/build-win32/CMakeFiles/CMakeOutput.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/CMakeFiles/git-data/head-ref" afterPath="$PROJECT_DIR$/build-win32/CMakeFiles/git-data/head-ref" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/Testing/Temporary/LastTest.log" afterPath="$PROJECT_DIR$/build-win32/Testing/Temporary/LastTest.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/CXX.includecache" afterPath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/depend.internal" afterPath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/depend.make" afterPath="$PROJECT_DIR$/build-win32/src/gui/CMakeFiles/mokapress.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build-win32/src/libsync/version.h" afterPath="$PROJECT_DIR$/build-win32/src/libsync/version.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/gui/folderman.cpp" afterPath="$PROJECT_DIR$/client/src/gui/folderman.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/gui/folderwatcher.cpp" afterPath="$PROJECT_DIR$/client/src/gui/folderwatcher.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/gui/infodirdialog.cpp" afterPath="$PROJECT_DIR$/client/src/gui/infodirdialog.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/gui/infofiledialog.cpp" afterPath="$PROJECT_DIR$/client/src/gui/infofiledialog.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/gui/languagesettings.cpp" afterPath="$PROJECT_DIR$/client/src/gui/languagesettings.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/gui/socketapi.cpp" afterPath="$PROJECT_DIR$/client/src/gui/socketapi.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/libsync/filesystem.cpp" afterPath="$PROJECT_DIR$/client/src/libsync/filesystem.cpp" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5214447">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
+          <file leaf-file-name="infofiledialog.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/gui/infofiledialog.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1943">
+                  <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="infodirdialog.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/gui/infodirdialog.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2523">
+                  <caret line="93" column="33" lean-forward="false" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="languagesettings.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/gui/languagesettings.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1717">
+                  <caret line="82" column="59" lean-forward="false" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
+          <file leaf-file-name="infofiledialog.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/gui/infofiledialog.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="377">
+                  <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="theme.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/libsync/theme.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1296">
+                  <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.config</find>
+      <find>start</find>
+      <find>theme</find>
+      <find>timest</find>
+      <find>tim</find>
+      <find>readuser</find>
+      <find>change</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/client/src/libsync/propagatorjobs.cpp" />
+        <option value="$PROJECT_DIR$/win/build.sh" />
+        <option value="$PROJECT_DIR$/client/shell_integration/MacOSX/OwnCloudFinderSync/FinderSyncExt/FinderSync.m" />
+        <option value="$PROJECT_DIR$/client/src/libsync/theme.h" />
+        <option value="$PROJECT_DIR$/client/src/libsync/theme.cpp" />
+        <option value="$PROJECT_DIR$/client/src/libsync/filesystem.cpp" />
+        <option value="$PROJECT_DIR$/client/src/gui/folderman.cpp" />
+        <option value="$PROJECT_DIR$/client/src/gui/infodirdialog.cpp" />
+        <option value="$PROJECT_DIR$/client/src/gui/folderwatcher.cpp" />
+        <option value="$PROJECT_DIR$/client/src/gui/socketapi.cpp" />
+        <option value="$PROJECT_DIR$/client/src/gui/languagesettings.cpp" />
+        <option value="$PROJECT_DIR$/client/src/gui/infofiledialog.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="3840" />
+    <option name="height" value="2160" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mokapress_v2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mokapress-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mokapress_v2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mokapress-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="win" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mokapress_v2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mokapress-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mokapress_v2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mokapress-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mokapress_v2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mokapress-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libsync" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mokapress_v2" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mokapress-v2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.mokapress_v2">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CLion_Remote" factoryName="GDB Remote Debug" remoteCommand="" symbolFile="" sysroot="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="FirefoxRemoteDebugType" factoryName="Firefox Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeWebKit" factoryName="NW.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="mokapress-v2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ReactNative" factoryName="React Native">
+      <node-interpreter value="project" />
+      <platform value="ANDROID" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="mokapress-v2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="mokapress-v2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="mokapress-v2" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="mokapress-v2" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="mokapress-v2" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="mokapress_v2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="mokapress_v2" TARGET_NAME="mokapress_v2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="mokapress_v2" RUN_TARGET_NAME="mokapress_v2">
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.mokapress_v2" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ee30fc8-7921-4f47-b2de-2faa9c8b6dcd" name="Default" comment="" />
+      <created>1499983517960</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1499983517960</updated>
+      <workItem from="1499983519232" duration="2929000" />
+      <workItem from="1499999991252" duration="78000" />
+      <workItem from="1500000085983" duration="15075000" />
+      <workItem from="1500484881086" duration="19581000" />
+      <workItem from="1500954157990" duration="6439000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="44102000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="3840" height="2160" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19244792" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915664" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/propagatedownload.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="47" column="47" lean-forward="false" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/socketapi.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7134">
+          <caret line="246" column="48" lean-forward="false" selection-start-line="246" selection-start-column="48" selection-end-line="246" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/infodirdialog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2726">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/languagesettings.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3509">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/infofiledialog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2842">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/infofiledialog.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/theme.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1537">
+          <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/propagatedownload.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="47" column="47" lean-forward="false" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/infofiledialog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2320">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/theme.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13891">
+          <caret line="479" column="39" lean-forward="false" selection-start-line="479" selection-start-column="39" selection-end-line="479" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/socketapi.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7134">
+          <caret line="246" column="48" lean-forward="false" selection-start-line="246" selection-start-column="48" selection-end-line="246" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/infodirdialog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2291">
+          <caret line="79" column="62" lean-forward="false" selection-start-line="79" selection-start-column="62" selection-end-line="79" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/infofiledialog.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/theme.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1537">
+          <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/propagatedownload.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="47" column="47" lean-forward="false" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/propagatorjobs.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3770">
+          <caret line="130" column="116" lean-forward="false" selection-start-line="130" selection-start-column="116" selection-end-line="130" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/win/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/propagatedownload.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="47" column="47" lean-forward="true" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/propagatorjobs.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3770">
+          <caret line="130" column="116" lean-forward="true" selection-start-line="130" selection-start-column="116" selection-end-line="130" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/win/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/win/build.sh.backup" />
+    <entry file="file://$PROJECT_DIR$/win/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/shell_integration/MacOSX/OwnCloudFinderSync/FinderSyncExt/FinderSync.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/propagatorjobs.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="79" column="36" lean-forward="false" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/infofiledialog.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/theme.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/theme.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13891">
+          <caret line="479" column="39" lean-forward="false" selection-start-line="479" selection-start-column="39" selection-end-line="479" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/propagatedownload.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="47" column="47" lean-forward="false" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/libsync/filesystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2146">
+          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/socketapi.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="185" column="60" lean-forward="true" selection-start-line="185" selection-start-column="60" selection-end-line="185" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/infodirdialog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2523">
+          <caret line="93" column="33" lean-forward="false" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/languagesettings.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1717">
+          <caret line="82" column="59" lean-forward="false" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/folderman.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="793" column="0" lean-forward="false" selection-start-line="793" selection-start-column="0" selection-end-line="793" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/folderwatcher.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3277">
+          <caret line="113" column="34" lean-forward="false" selection-start-line="113" selection-start-column="34" selection-end-line="113" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/application.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8700">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/gui/infofiledialog.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1943">
+          <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -792,22 +792,6 @@ void FolderMan::slotFolderSyncFinished( const SyncResult& )
     _lastSyncFolder = _currentSyncFolder;
     _currentSyncFolder = 0;
 
-    //When sync is finished, create a timestamp in .config folder for the website
-    Theme   *theme = Theme::instance();
-    qDebug() << "Creating timestamp " << theme->getLocalFolderPath();
-
-    QString configFolder;
-
-    configFolder.append(theme->getLocalFolderPath());
-    configFolder.append("/.config/timestamp.log");
-
-    QFile   timestamp(configFolder);
-    if (timestamp.open(QIODevice::WriteOnly)) {
-        QDateTime   time = QDateTime::currentDateTime();
-        timestamp.write(time.toString().toStdString().c_str());
-    }
-    timestamp.close();
-
     startScheduledSyncSoon();
 }
 

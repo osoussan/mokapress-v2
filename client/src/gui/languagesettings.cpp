@@ -8,6 +8,8 @@
 #include <QDebug>
 #include <QRadioButton>
 
+#include <locale>
+
 #include "languagesettings.h"
 #include "configfile.h"
 #include "ui_languagesettings.h"
@@ -26,12 +28,23 @@ LanguageSettings::LanguageSettings(QWidget *parent) :
     ConfigFile  cfgFile;
 
     if (readUserLanguages(cfgFile.userLanguages()) == -1) {
-        addPattern("French", true);
-        addPattern("English", false);
-        addPattern("German", false);
-        addPattern("Spanish", false);
-        addPattern("Dutch", false);
-        addPattern("Chinese", false);
+
+        QString userLocaleLang = QString::fromStdString((std::locale("").name()).substr(0, 2));
+
+        bool fr = false;
+        bool en = true;
+        bool de = false;
+        bool es = false;
+        bool du = false;
+        bool zn = false;
+
+        addPattern("French", fr);
+        addPattern("English", en);
+        addPattern("German", de);
+        addPattern("Spanish", es);
+        addPattern("Dutch", du);
+        addPattern("Chinese", zn);
+        slotUpdateLocalLanguageList();
     }
 
     connect(this, SIGNAL(accepted()), SLOT(slotUpdateLocalLanguageList()));
@@ -52,7 +65,6 @@ int LanguageSettings::readUserLanguages(const QString &file) {
             QString line = QString::fromUtf8(languages.readLine());
             line.chop(1);
             if (!line.isEmpty() && !line.startsWith("#")) {
-                //bool deletable = false;
                 bool activated = false;
                 if (line.startsWith("++")) {
                     activated = true;
@@ -68,6 +80,7 @@ int LanguageSettings::readUserLanguages(const QString &file) {
         }
         _ui->comboBox->setCurrentIndex(index);
     } else {
+        qDebug() << "MOKAERROR: Cannot read language file, 'sync-language.lst' does not exist";
         return -1;
     }
     return 0;

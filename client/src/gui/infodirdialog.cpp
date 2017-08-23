@@ -2,6 +2,7 @@
 #include "ui_infodirdialog.h"
 #include "configfile.h"
 #include "theme.h"
+#include "languagesettings.h"
 
 #include <QFileInfo>
 #include <QFile>
@@ -26,6 +27,17 @@ InfoDirDialog::InfoDirDialog(const QString &sharePath, const QString &localPath,
     ConfigFile  cfgFile;
 
     _languages = readUserLanguages(cfgFile.userLanguages());
+    if (_languages.size() == 0) {
+
+        ConfigFile cfgFile;
+        QString languageFile = cfgFile.userLanguages();
+        QFile languages(languageFile);
+        if (languages.open(QIODevice::WriteOnly)) {
+            languages.write("French\n++English\nGerman\nSpanish\nChinese\nDutch\n");
+            languages.close();
+        }
+        _languages = readUserLanguages(cfgFile.userLanguages());
+    }
 
     if (_languages.size() <= 5) {
         _nbelem = _languages.size();
@@ -76,8 +88,10 @@ InfoDirDialog::InfoDirDialog(const QString &sharePath, const QString &localPath,
 
     Theme   *theme = Theme::instance();
 
-    const QString &before = QString(theme->getLocalFolderName());
-    const QString &after = QString(theme->getLocalFolderName() + "/.config");
+    QString before1 = QString(theme->getLocalFolderName());
+    const QString &before = before1.mid(1);
+    QString after1 = QString(theme->getLocalFolderName() + "\\.config");
+    const QString &after = after1.mid(1);
     _infoFilePath = const_cast<QString&>(localPath).replace(before, after) + QString("/info.xml");
 
     QFileInfo infoFileInfo(_infoFilePath);

@@ -183,6 +183,7 @@ void SocketApi::slotReadSocket()
         } */
         QString command = line.split(":").value(0);
         QString function = QString(QLatin1String("command_")).append(command);
+        qDebug() << "MOKASTATUS: command is : " << function;
 
         QString functionWithArguments = function + QLatin1String("(QString,QIODevice*)");
         int indexOfMethod = this->metaObject()->indexOfMethod(functionWithArguments.toAscii());
@@ -340,8 +341,6 @@ void SocketApi::command_RETRIEVE_FILE_STATUS(const QString& argument, QIODevice*
 
 void SocketApi::command_SHARE(const QString& localFile, QIODevice* socket)
 {
-    std::cout << "in command_SHARE" << std::endl;
-
     if (!socket) {
         qDebug() << Q_FUNC_INFO << "No valid socket object.";
         return;

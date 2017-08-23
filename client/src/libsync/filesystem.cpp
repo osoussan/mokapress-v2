@@ -95,31 +95,21 @@ bool FileSystem::fileEquals(const QString& fn1, const QString& fn2)
 
 void FileSystem::setFileHidden(const QString& filename, bool hidden)
 {
-    qDebug() << "in setfilehidden BEFORE ifdef";
 #ifdef _WIN32
-    qDebug() << "in setfilehidden AFTER ifdef";
     QString fName = longWinPath(filename);
     DWORD dwAttrs;
 
     dwAttrs = GetFileAttributesW( (wchar_t*)fName.utf16() );
 
-    if (hidden) {
-        qDebug() << "SetFileHidden hidden = true";
-    } else {
-            qDebug() << "SetFileHidden hidden = false";
-    }
-
     if (dwAttrs == INVALID_FILE_ATTRIBUTES) {
-        qDebug() << "SetFileHidden dwAttrs invalid";
+        qDebug() << "MOKAERROR: Invalid File Attributes";
     }
 
     if (dwAttrs != INVALID_FILE_ATTRIBUTES) {
         if (hidden && !(dwAttrs & FILE_ATTRIBUTE_HIDDEN)) {
             SetFileAttributesW((wchar_t*)fName.utf16(), dwAttrs | FILE_ATTRIBUTE_HIDDEN );
-            qDebug() << "Set attributes to -> hidden";
         } else if (!hidden && (dwAttrs & FILE_ATTRIBUTE_HIDDEN)) {
             SetFileAttributesW((wchar_t*)fName.utf16(), dwAttrs & ~FILE_ATTRIBUTE_HIDDEN );
-            qDebug() << "Set attributes to -> not hidden";
         }
     }
 #else

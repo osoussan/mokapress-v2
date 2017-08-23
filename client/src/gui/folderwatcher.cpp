@@ -34,6 +34,7 @@
 
 #include "excludedfiles.h"
 #include "folder.h"
+#include "theme.h"
 
 namespace OCC {
 
@@ -109,8 +110,26 @@ void FolderWatcher::changeDetected( const QStringList& paths )
             return;
         }
     }
+    
+    qDebug() << "changes detected in paths:" << changedPaths;
 
-    qDebug() << "detected changes in paths:" << changedPaths;
+    //When sync is finished, create a timestamp in .config folder for the website
+    Theme   *theme = Theme::instance();
+    qDebug() << "Creating timestamp " << theme->getLocalFolderPath();
+
+    QString configFolder;
+
+    configFolder.append(theme->getLocalFolderPath());
+    configFolder.append("/.config/timestamp.log");
+
+    QFile   timestamp(configFolder);
+    if (timestamp.open(QIODevice::WriteOnly)) {
+        QDateTime   time = QDateTime::currentDateTime();
+        timestamp.write(time.toString().toStdString().c_str());
+    }
+    timestamp.close();
+
+
     foreach (const QString &path, changedPaths) {
         emit pathChanged(path);
     }

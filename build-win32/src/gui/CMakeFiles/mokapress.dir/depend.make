@@ -8553,6 +8553,7 @@ src/gui/CMakeFiles/mokapress.dir/folderwatcher.cpp.obj: /home/user/client/src/gu
 src/gui/CMakeFiles/mokapress.dir/folderwatcher.cpp.obj: /home/user/client/src/gui/../libsync/syncfileitem.h
 src/gui/CMakeFiles/mokapress.dir/folderwatcher.cpp.obj: /home/user/client/src/gui/../libsync/syncjournaldb.h
 src/gui/CMakeFiles/mokapress.dir/folderwatcher.cpp.obj: /home/user/client/src/gui/../libsync/syncresult.h
+src/gui/CMakeFiles/mokapress.dir/folderwatcher.cpp.obj: /home/user/client/src/gui/../libsync/theme.h
 src/gui/CMakeFiles/mokapress.dir/folderwatcher.cpp.obj: /home/user/client/src/gui/../libsync/utility.h
 src/gui/CMakeFiles/mokapress.dir/folderwatcher.cpp.obj: /home/user/client/src/gui/folder.h
 src/gui/CMakeFiles/mokapress.dir/folderwatcher.cpp.obj: /home/user/client/src/gui/folderwatcher.cpp
@@ -10242,6 +10243,7 @@ src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/src/gu
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/src/gui/../libsync/theme.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/src/gui/infodirdialog.cpp
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/src/gui/infodirdialog.h
+src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /home/user/client/src/gui/languagesettings.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/GL/gl.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/GLES2/gl2.h
 src/gui/CMakeFiles/mokapress.dir/infodirdialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/GLES2/gl2platform.h
@@ -10907,6 +10909,7 @@ src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/src/g
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/src/gui/../libsync/theme.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/src/gui/infofiledialog.cpp
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/src/gui/infofiledialog.h
+src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /home/user/client/src/gui/languagesettings.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/GL/gl.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/GLES2/gl2.h
 src/gui/CMakeFiles/mokapress.dir/infofiledialog.cpp.obj: /usr/i686-w64-mingw32/sys-root/mingw/include/GLES2/gl2platform.h

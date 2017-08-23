@@ -2161,6 +2161,8 @@ excludedfiles.h
 /home/user/client/src/gui/excludedfiles.h
 folder.h
 /home/user/client/src/gui/folder.h
+theme.h
+/home/user/client/src/gui/theme.h
 
 /home/user/client/src/gui/folderwatcher.h
 config.h
@@ -2375,6 +2377,8 @@ configfile.h
 /home/user/client/src/gui/configfile.h
 theme.h
 /home/user/client/src/gui/theme.h
+languagesettings.h
+/home/user/client/src/gui/languagesettings.h
 QFileInfo
 -
 QFile
@@ -2403,6 +2407,8 @@ ui_infofiledialog.h
 /home/user/client/src/gui/ui_infofiledialog.h
 theme.h
 /home/user/client/src/gui/theme.h
+languagesettings.h
+/home/user/client/src/gui/languagesettings.h
 QFileInfo
 -
 QFile
@@ -2442,6 +2448,8 @@ QInputDialog
 QDebug
 -
 QRadioButton
+-
+locale
 -
 languagesettings.h
 /home/user/client/src/gui/languagesettings.h
